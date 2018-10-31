@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Button from './Button/Button.js';
+import BorderButton from './BorderButton/BorderButton.js';
 
 class App extends Component {
   render() {
@@ -20,6 +22,15 @@ class App extends Component {
             Learn React
           </a>
         </header>
+
+        <Button />
+        <Button className="WeirdButton">
+          This is a button with special children
+        </Button>
+        <BorderButton />
+        <BorderButton>
+          This is a border button with special children
+        </BorderButton>
       </div>
     );
   }
