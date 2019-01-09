@@ -1,4 +1,0 @@
-.base {
-  composes: base from "../Button/Button.module.css";
-  border: 10px solid #0c0;
-}

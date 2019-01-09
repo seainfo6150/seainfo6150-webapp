@@ -12,21 +12,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-
-
-.WeirdButton {
-  background: #000;
-  border: 0;
-  padding: 20px;
-  color: orange;
-  margin-bottom: 20px;
-}
-
-/* .BorderButton {
-  background: #ccc;
-  border: 5px solid #c00;
-  padding: 20px;
-  color: #000;
-  margin-bottom: 20px;
-} */
