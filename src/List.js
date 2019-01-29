@@ -17,7 +17,7 @@ const List = ({ list }) => (
 );
 
 List.propTypes = {
-  list: PropTypes.array.isRequired
+    list: PropTypes.array.isRequired
 };
 
 export default List;

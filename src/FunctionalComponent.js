@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Name form ".Name";
 
-const FunctionalComponent = ({}) => (
-  <div></div>
+const Array = ({array}) => (
+  <div>{}</div>
 );
 
-FunctionalComponent.propTypes = {
+Array.propTypes = {
+    array: PropTypes.array.isRequired;
 };
 
-export default FunctionalComponent;
+export default Array;

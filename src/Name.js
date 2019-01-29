@@ -1,8 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 const Name = ({ firstName, lastName }) => (
-  <div>{firstName} {lastName}</div>
+  <div>
+    {firstName} {lastName}
+  </div>
 );
 
 Name.propTypes = {
