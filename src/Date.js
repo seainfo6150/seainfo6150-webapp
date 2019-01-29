@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Date=({ dateTime , date}) => (
+const Date=({date}) => (
 
-    <time datetime={dateTime}>{date}</time>
+    <time>{date}</time>
 );
 
 Date.propTypes={
-    dateTime:PropTypes.string.isRequired,
     date:PropTypes.string.isRequired
 };
 

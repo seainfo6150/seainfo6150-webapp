@@ -3,14 +3,13 @@ import PropTypes from 'prop-types';
 import Title from './Title';
 import Date from './Date';
 import Author from './Author';
-import Children from "./Children";
 
-const Article= ({title,datetime,date,author})=>(
+const Article= (props)=>(
    <ol>
-       <Title title={title}/>
-       <Author author={author}/>
-       <Date dateTime={datetime} date={date}/>
-       <Children/>
+       <Title title={props.title}/>
+       <Author author={props.author}/>
+       <Date date={props.date}/>
+       {props.children}
   </ol>
 
 );
@@ -20,7 +19,6 @@ Article.propTypes={
     datetime: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
-
 };
 
 
