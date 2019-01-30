@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import List from './List';
-import Name from './Name';
 import Article from './Article'
 
 class App extends Component {

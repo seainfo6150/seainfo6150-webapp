@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React  from 'react';
 import PropTypes from 'prop-types';
 import Title from './Title';
 import Date from './Date';
@@ -16,7 +16,6 @@ const Article= (props)=>(
 
 Article.propTypes={
     title: PropTypes.string.isRequired,
-    datetime: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
 };
