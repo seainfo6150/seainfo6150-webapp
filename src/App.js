@@ -7,10 +7,10 @@ class App extends Component {
   render() {
 
     const title="The Statue of Liberty's torch heads to new museum";
-    const datetime="2018-11-22";
     const date="November 22, 2018";
     const author="Kate Farley";
-    const article =  <ul>
+    const article =  
+    <ul>
     <p>The Statue of Liberty's original torch is getting a new home.</p>
     <section>
     <p> Made of copper and gold so that it would shine bright, the first torch took a beating from the weather and was replaced by a replica in <time datetime="1984">1984</time>. It's been stored in the statue's pedestal ever since.</p>
@@ -44,7 +44,7 @@ class App extends Component {
 
     return (
       <div className="App">
-       <Article author={author} title={title} datetime={datetime} date={date}>{article}</Article>
+      <Article author={author} title={title} date={date}>{article}</Article>
       </div>
     );
   }

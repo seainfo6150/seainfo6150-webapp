@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Author=({author})=>(
     <div>
-    <h3>{author}</h3>
+    <h3 align = "center">{author}</h3>
     </div>
 );
 
