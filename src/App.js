@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
 import List from './List';
+import AddingMachine from './AddingMachine';
+import ArticleTable from './ArticleTable';
+import articles from './data/articles.json';
 
 class App extends Component {
   render() {
-
-    const array = [
-      { firstName: "April", lastName: "Bingham" },
-      { firstName: "Tom", lastName: "Cruise" },
-      { firstName: "Mickey", lastName: "Mouse" }
-    ];
-
     return (
       <div className="App">
-        <List list={array} />
+        <ArticleTable articles={articles} />
       </div>
     );
   }
