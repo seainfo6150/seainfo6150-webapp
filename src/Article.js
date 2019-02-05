@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Title from './Title';
 import Date from './Date';
@@ -19,6 +19,9 @@ Article.propTypes={
     date: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
 };
+
+
+
 
 
 export default Article;
