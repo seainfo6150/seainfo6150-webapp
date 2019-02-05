@@ -30,7 +30,7 @@ class ArticleTableRow extends React.Component {
     // onClick={this.onClick.bind(this)}
     //
     return (
-      <div>Replace this div with your table row HTML</div>
+      <tr><td>Replace this div with your table row HTML</td></tr>
     );
   }
 
