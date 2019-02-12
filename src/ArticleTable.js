@@ -1,10 +1,9 @@
+
 import React, { Component }  from 'react';
 import PropTypes from 'prop-types';
 import ArticleTableRow from './ArticleTableRow';
 
 const ArticleTable = ({ articles }) => (
-   
-
     <table border="1">
     <caption>This is a table</caption>
     <thead>
@@ -16,7 +15,6 @@ const ArticleTable = ({ articles }) => (
         <th>short Text</th>
       </tr>
     </thead>
-
   {
     // this iterates through the articles JSON and
     // calls your ArticleTableRow component for each article
@@ -39,3 +37,4 @@ ArticleTable.propTypes = {
 }
 
 export default ArticleTable;
+
