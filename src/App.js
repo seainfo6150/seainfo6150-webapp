@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function App() {
+const App = ({ article }) => {
   return (
     <div className="App">
       
@@ -8,4 +9,13 @@ function App() {
   );
 }
 
+App.propTypes = {
+  article: PropTypes.shape({
+    "title": PropTypes.string.isRequired,
+    "shortText": PropTypes.string.isRequired,
+    "pubDate": PropTypes.string.isRequired,
+    "pubYear": PropTypes.string.isRequired,
+    "author": PropTypes.string.isRequired
+  }).isRequired
+}
 export default App;
