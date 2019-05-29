@@ -2,7 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const HelloUser = (props) => {
-    return <button onClick={() => alert('this button was clicked')}>{props.user.name}</button>;
+    return <section>
+        <header>HelloUser component</header>
+        <button onClick={() => alert('this button was clicked')}>{props.user.name}</button>
+    </section>;
 };
 
 HelloUser.propTypes = {
