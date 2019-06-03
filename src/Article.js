@@ -1,22 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Article from './Article';
 
-const App = ({ article }) => {
-  return (
-    <div className="App">
-      <Article article = {article} />
-    </div>
-  );
-}
+const Article = ({ article }) => (
+  <div>
+  	<h3>{article.title}</h3>
+  	<p><em>By: {article.author}</em><br /><time dateTime = {article.pubDate}>{article.pubDate}</time></p>
+  	<p>{article.shortText}</p>
+  </div>
+);
 
-App.propTypes = {
-  article: PropTypes.shape({
+Article.propTypes = {
+	article: PropTypes.shape({
     "title": PropTypes.string.isRequired,
     "shortText": PropTypes.string.isRequired,
     "pubDate": PropTypes.string.isRequired,
     "pubYear": PropTypes.string.isRequired,
     "author": PropTypes.string.isRequired
   }).isRequired
-}
-export default App;
+};
+
+export default Article;
