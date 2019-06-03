@@ -3,7 +3,7 @@ import React from 'react';
 function App() {
   return (
     <div className="App">
-     	<h3>The Statue of Liberty's torch heads to new museum</h3><p>by Kate Farley (<a href="mailto:kate.farley@nytimes.com">kate.farley@nytimes.com</a>)<br />November 22, 2018</p>   
+     	<h3>The Statue of Liberty's torch heads to new museum</h3><p>by Kate Farley (<a href="mailto:kate.farley@nytimes.com">kate.farley@nytimes.com</a>)<br /><time dateTime="November 22, 2018">November 22, 2018</time></p>   
 			
 		<p>The Statue of Liberty's original torch is getting a new home.</p>
 
@@ -11,7 +11,7 @@ function App() {
 		
 		<p>But visitors will be able to see the original 3,600-pound torch in all its glory at a new Statue of Liberty Museum, which<br /> will open on Liberty Island in May 2019. The torch was transported there by truck last week, along with a replica model<br /> of Lady Liberty's face.</p>
 		
-		<p>"Although it is not one of the most difficult things we have ever moved," says Douglas Phelps, who oversaw the<br />relocation of the torch, "it is certainly the most important."</p>
+		<p><q>Although it is not one of the most difficult things we have ever moved,</q> says Douglas Phelps, who oversaw the<br />relocation of the torch, <q>it is certainly the most important.</q></p>
 
 		<h4>The history of the Statue of Liberty</h4>
 
@@ -23,7 +23,7 @@ function App() {
 
 		<p>Since then, the statue has served as a symbol of hope and possibility for many people who entered the United States<br /> as immigrants via neighboring Ellis Island.</p>
 
-		<p>"The original torch is a beautiful object of art and exemplifies the American ideals of freedom and democracy," says<br /> John Piltzecker, superintendent of the Statue of Liberty National Monument. That symbolic spirit inspired the decision<br /> to inscribe these famous lines on the statue's pedestal: "Give me your tired, your poor / Your huddled masses yearning<br /> to breathe free."</p>
+		<p><q>The original torch is a beautiful object of art and exemplifies the American ideals of freedom and democracy,</q> says<br /> John Piltzecker, superintendent of the Statue of Liberty National Monument. That symbolic spirit inspired the decision<br /> to inscribe these famous lines on the statue's pedestal: <q>Give me your tired, your poor / Your huddled masses yearning<br /> to breathe free.</q></p>
 
 		<p>In 2017, nearly 4.5 million people visited Liberty Island.</p>
 
@@ -38,7 +38,7 @@ function App() {
 			<li>The Statue has a <strong>35-foot</strong> waistline</li>
 			<li>Total weight of the Statue of Liberty is <strong>225 tons</strong> (or <strong>450,000 pounds</strong>)</li>
 		</ul>
-    </div>
+    </div> 
   );
 }
 
