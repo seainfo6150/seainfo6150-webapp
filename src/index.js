@@ -11,7 +11,7 @@ if (querystring.toLowerCase() === "?demo=true") {
   ReactDOM.render(<Demo />, document.getElementById("root"));
 } else {
   ReactDOM.render(
-    <App article={Object.values(articles)[0]} />,
+    <App articles={Object.values(articles)} />,
     document.getElementById("root")
   );
 }
