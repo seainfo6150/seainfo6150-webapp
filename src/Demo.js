@@ -2,6 +2,8 @@ import React from 'react';
 import JSConcepts from './component-examples/JSConcepts.js';
 import HelloUser from './component-examples/HelloUser.js';
 import AddingMachine from './component-examples/AddingMachine.js';
+import CSSModule from './component-examples/CSSModule/CSSModule.jsx';
+import CSSModule2 from './component-examples/CSSModule2/CSSModule2.jsx';
 
 const Demo = () => {
   const user = {
@@ -17,6 +19,9 @@ const Demo = () => {
       <HelloUser user={user} />
       <hr />
       <AddingMachine startNum={0}>Title of the Adding Machine</AddingMachine>
+      <hr />
+      <CSSModule />
+      <CSSModule2 />
     </div>
   );
 }
