@@ -1,0 +1,24 @@
+.articleListItem{
+	border:2px solid red;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	margin-right: 40px;
+	position: relative;
+	height: 180px;
+}
+
+.articleTitle{
+	color: red;
+}
+
+.articleDateAndAuthor{
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding-right: 10px;
+}
