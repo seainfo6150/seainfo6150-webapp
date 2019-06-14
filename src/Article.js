@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Article = ({ article }) => (
-  <div className="Article">
+  <article>
   	<h3>{article.title}</h3>
   	<p><cite>By: {article.author}</cite><br /><time dateTime = {article.pubDate}>{article.pubDate}</time></p>
   	<p>{article.shortText}</p>
-  </div>
+  </article>
 );
 
 Article.propTypes = {
