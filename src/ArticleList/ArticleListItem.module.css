@@ -1,0 +1,18 @@
+.article_Title{
+    color: red;
+}
+
+.article_Date_Author{
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 10px;
+}
+
+.articleListItem{
+    border: 2px solid red;
+    position: relative;
+    height: 150px;
+    
+}
