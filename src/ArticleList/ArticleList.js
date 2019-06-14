@@ -4,7 +4,7 @@ import ArticleListItem from './ArticleListItem';
 import styles from './ArticleList.module.css';
 
 const ArticleList = ({ articles }) => (
-  <table className="ArticleList">
+  <div className="ArticleList">
     <ul className={styles.articleList}>
       {Object.values(articles).map(article => 
         <li>
@@ -12,7 +12,7 @@ const ArticleList = ({ articles }) => (
         </li>
       )}
     </ul>
-  </table>
+  </div>
 );
 
 ArticleList.propTypes = {
