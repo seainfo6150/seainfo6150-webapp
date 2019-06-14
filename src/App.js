@@ -4,9 +4,9 @@ import Article from './Article';
 
 const App = ({ article }) => {
   return (
-    <article>
+    <div className="App">
       <Article article = {article} />
-    </article>
+    </div>
   );
 }
 
