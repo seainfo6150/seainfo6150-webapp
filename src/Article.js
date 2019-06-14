@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 const Article = ({ article }) => (
   <article>
-  	<h3>{article.title}</h3>
+	<header>
+  		<h3>{article.title}</h3>
+	</header>
   	<p><cite>By: {article.author}</cite><br /><time dateTime = {article.pubDate}>{article.pubDate}</time></p>
   	<p>{article.shortText}</p>
   </article>
