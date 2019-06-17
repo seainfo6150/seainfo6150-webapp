@@ -1,12 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-const HelloUser = ({ user }) => (
-  <div></div>
-);
+const HelloUser = (props) => {
+    return <section>
+        <header>HelloUser component</header>
+        <button onClick={() => alert('this button was clicked')}>{props.user.name}</button>
+    </section>;
+};
 
 HelloUser.propTypes = {
-    user: PropTypes.object.isRequired
+  user: PropTypes.object.isRequired
 };
 
 export default HelloUser;

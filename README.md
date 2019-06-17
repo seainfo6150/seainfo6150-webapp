@@ -1,6 +1,10 @@
 # INFO6150 web app
 Repository of assignments/labs webapp
 
+# View the demo components
+Visit http://localhost:3000/?demo=true with the webapp running
+
+
 # Forking class repo and setting upstream remote
 1. Install git: https://git-scm.com/downloads
 2. Go to the git repo for this class: https://github.com/aprilbingham-neu/seainfo6150-webapp
