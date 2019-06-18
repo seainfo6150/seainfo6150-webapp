@@ -4,7 +4,7 @@ import ArticleList from './ArticleList/ArticleList';
 
 const App = ({ articles }) => {
   return (
-    <div className="App">
+    <div>
       <ArticleList articles = {articles} />
     </div>
   );

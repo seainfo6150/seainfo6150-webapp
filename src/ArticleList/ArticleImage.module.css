@@ -1,0 +1,16 @@
+.articleTitle{
+	color: red;
+}
+
+.articleImage{
+	float: left;
+	width: 170px;
+	height: 100px;
+	margin-left: 10px;
+	margin-right: 20px;
+	border-radius: 50%;
+	border-color: red;
+	border-style: solid;
+	border-width: thick;
+	box-shadow: 0 20px 20px -10px black;
+}

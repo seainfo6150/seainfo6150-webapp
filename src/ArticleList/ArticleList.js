@@ -4,15 +4,15 @@ import ArticleListItem from './ArticleListItem';
 import styles from './ArticleList.module.css';
 
 const ArticleList = ({ articles }) => (
-  <table className="ArticleList">
+  <div>
     <ul className={styles.articleList}>
       {Object.values(articles).map(article => 
         <li>
-          <ArticleListItem title={article.title} author={article.author} pubDate={article.pubDate} shortText={article.shortText}/>
+          <ArticleListItem title={article.title} author={article.author} pubDate={article.pubDate} shortText={article.shortText} url={article.image._url}/>
         </li>
       )}
     </ul>
-  </table>
+  </div>
 );
 
 ArticleList.propTypes = {
