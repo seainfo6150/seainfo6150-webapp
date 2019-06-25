@@ -11,6 +11,6 @@
 	border-radius: 50%;
 	border-color: red;
 	border-style: solid;
-	border-width: thick;
+	border-width: 10px;
 	box-shadow: 0 20px 20px -10px black;
 }
