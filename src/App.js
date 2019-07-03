@@ -1,11 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ArticleList from './ArticleList/ArticleList';
+import NewsHeader from './NewsHeader';
+import NewsFooter from './NewsFooter';
 
 const App = ({ articles }) => {
   return (
     <div>
-      <ArticleList articles = {articles} />
+      <header>
+        <NewsHeader />
+      </header>
+      <section>
+        <ArticleList articles = {articles} />
+      </section>
+      <footer>
+        <NewsFooter />
+      </footer>
     </div>
   );
 }

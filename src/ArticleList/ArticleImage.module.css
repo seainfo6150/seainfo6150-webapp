@@ -1,16 +1,17 @@
 .articleTitle{
-	color: red;
+	color: #d40416;
+	padding-left: 10px;
+	padding-top: 20px;
 }
 
 .articleImage{
-	float: left;
 	width: 170px;
 	height: 100px;
 	margin-left: 10px;
 	margin-right: 20px;
 	border-radius: 50%;
-	border-color: red;
+	border-color: #d40416;
 	border-style: solid;
-	border-width: thick;
+	border-width: 10px;
 	box-shadow: 0 20px 20px -10px black;
 }

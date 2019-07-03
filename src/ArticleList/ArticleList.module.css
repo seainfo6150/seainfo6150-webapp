@@ -1,3 +1,12 @@
 .articleList{
 	list-style-type: none;
+	background-color: #9d9fa1;
+	margin-right: 20px;
+	margin-left: 20px;
+	padding-right: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	display: grid;
+  	grid-template-columns: repeat(3, 1fr);
+  	grid-gap: 40px;
 }

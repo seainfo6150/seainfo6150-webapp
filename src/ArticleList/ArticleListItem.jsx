@@ -6,7 +6,7 @@ import styles from './ArticleListItem.module.css';
 const ArticleListItem = ({ title, author, pubDate, shortText, url }) => (
   <article className={styles.articleListItem}>
     <ArticleImage title={title} url={url} />		
-  	<p>{shortText}</p>
+  	<p className={styles.articleText}>{shortText}</p>
   	<footer className={styles.articleDateAndAuthor}>
   		<p><cite>By: {author}</cite><br /><strong><time dateTime = {pubDate}>{pubDate}</time></strong></p>
   	</footer>
