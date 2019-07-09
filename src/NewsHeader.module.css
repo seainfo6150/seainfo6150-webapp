@@ -11,6 +11,28 @@
 	margin-right: 20px;
 	padding-bottom: 40px;
 	padding-top: 40px;
-	padding-left: 30px;
-	padding-right: 30px;
+}
+
+@media (min-width: 100px) {
+
+  .newsHeader{
+  	padding-left: 15px;
+  	padding-right: 15px;
+  }
+  
+  .title{
+  	font-size: 25px;
+  }
+}
+
+@media (min-width: 600px) {
+
+  .newsHeader{
+  	padding-left: 30px;
+  	padding-right: 30px;
+  }
+
+  .title{
+  	font-size: 30px;
+  }
 }
