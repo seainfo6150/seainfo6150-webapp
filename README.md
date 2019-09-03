@@ -10,7 +10,7 @@ Visit http://localhost:3000/?demo=true with the webapp running
 
 
 # Forking class repo and setting upstream remote
-1. Install git: https://git-scm.com/downloads
+1. Make sure you have git installed: https://git-scm.com/downloads
 2. Go to the git repo for this class: https://github.com/aprilbingham-neu/seainfo6150-webapp
 3. Click “Fork” to create your copy of the repo
 4. Click “Clone or download” to get a link to copy your fork on your computer
@@ -25,7 +25,7 @@ git remote add upstream https://github.com/aprilbingham-neu/seainfo6150-webapp
 
 # Creating a branch from master
 ```
-cd seainfo6150-app
+cd seainfo6150-webapp
 git checkout master
 git pull origin master
 git checkout --b [new branch name]
@@ -33,7 +33,7 @@ git checkout --b [new branch name]
 
 # Creating a branch from a branch other than master
 ```
-cd seainfo6150-app
+cd seainfo6150-webapp
 git checkout [branch to create branch from]
 git checkout --b [new branch name]
 ```
