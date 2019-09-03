@@ -1,6 +1,10 @@
 # INFO6150 web app
 Repository of assignments/labs webapp
 
+# Github guide
+We will use github repos throughout the course. If you are not familiar with git, or could use a refresher on how to use git, this is an excellent starter guide: https://guides.github.com/activities/hello-world/
+
+
 # View the demo components
 Visit http://localhost:3000/?demo=true with the webapp running
 
