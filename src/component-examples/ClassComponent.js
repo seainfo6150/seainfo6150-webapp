@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 class ClassComponent extends React.Component {
   constructor(props) {
@@ -14,8 +13,5 @@ class ClassComponent extends React.Component {
   }
 
 }
-
-ClassComponent.propTypes = {
-};
 
 export default ClassComponent;
