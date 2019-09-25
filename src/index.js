@@ -6,8 +6,8 @@ import Demo from "./Demo";
 
 const querystring = window.location.search || '';
 
-if (querystring.toLowerCase() === "?demo=true") {
-    ReactDOM.render(<Demo />, document.getElementById('root'));
+if (/demo/.test(querystring.toLowerCase())) {
+    ReactDOM.render(<Demo querystring={querystring} />, document.getElementById('root'));
 } else {
     ReactDOM.render(<App />, document.getElementById('root'));
 }
