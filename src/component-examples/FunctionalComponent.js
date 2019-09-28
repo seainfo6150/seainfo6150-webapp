@@ -1,11 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const FunctionalComponent = ({}) => (
-  <div></div>
-);
-
-FunctionalComponent.propTypes = {
-};
+const FunctionalComponent = (props) => {
+  return (<div></div>);
+}
 
 export default FunctionalComponent;
