@@ -2,27 +2,28 @@ import React from 'react'
 
 const Article = () => {
   return (
-  <html lang = "en">
+    <div>
+    <html lang = "en">
     <head>
-      <title>The Statue of Liberty's torch heads to new museum</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Statue of Liberty's torch heads to new museum</title>
     </head>
-    <body>
-      <header>
-        
-      </header>
-    
+    <body>    
     <main>
       <article>
+      
+    <header>
     
-    <div>
-       <header>
     <h1>The Statue of Liberty's torch heads to new museum</h1>
     <i>by Kate Farley <a href="mailto:(kate.farley@nytimes.com)"
               >(kate.farley@nytimes.com)</a
             > <br /></i>
      <time dateTime="2018-11-22">November 22, 2018</time>  
-      </header> 
-      <section>
+     
+     </header>
+     <section>
       <p>
       The Statue of Liberty's original torch is getting a new home.
       </p>
@@ -33,13 +34,12 @@ const Article = () => {
       But visitors will be able to see the original 3,600-pound torch in all its glory at a new Statue of Liberty Museum, which will open on Liberty Island in May <time dateTime="2019">2019</time>. The torch was transported there by truck last week, along with a replica model of Lady Liberty's face.
       </p>
       <p>
-      "Although it is not one of the most difficult things we have ever moved," says Douglas Phelps, who oversaw the relocation of the torch, "it is certainly the most important."
+      <q>Although it is not one of the most difficult things we have ever moved,</q> says Douglas Phelps, who oversaw the relocation of the torch, <q>it is certainly the most important.</q>
       </p>
-      </section>
-      
-      <h1>The history of the Statue of Liberty</h1>
+     
+      <h2>The history of the Statue of Liberty</h2>
       <p>
-      Not only is the Statue of Liberty the symbol of New York City, she is also a UNESCO World Heritage site under the designation of _Outstanding Universal Value_.
+      Not only is the Statue of Liberty the symbol of New York City, she is also a UNESCO World Heritage site under the designation of <i>Outstanding Universal Value</i>.
       </p>
       <p>
       Her full name is Liberty Enlightening the World, and she was designed by Frederic Auguste Bartholdi and built by Gustave Eiffel -- yes, the same guy who built Paris's Eiffel Tower.
@@ -51,10 +51,10 @@ const Article = () => {
       Since then, the statue has served as a symbol of hope and possibility for many people who entered the United States as immigrants via neighboring Ellis Island.
       </p>
       <p>
-      "The original torch is a beautiful object of art and exemplifies the American ideals of freedom and democracy," says John Piltzecker, superintendent of the Statue of Liberty National Monument. That symbolic spirit inspired the decision to inscribe these famous lines on the statue's pedestal: 
+      <q>The original torch is a beautiful object of art and exemplifies the American ideals of freedom and democracy,</q> says John Piltzecker, superintendent of the Statue of Liberty National Monument. That symbolic spirit inspired the decision to inscribe these famous lines on the statue's pedestal: 
       </p>
-      <figure>Give me your tired, your poor <br /> Your huddled masses yearning to breathe free."
-      </figure>
+      <blockquote>Give me your tired, your poor <br /> Your huddled masses yearning to breathe free.
+      </blockquote>
       <p>
       In <time dateTime="2017">2017</time>, nearly 4.5 million people visited Liberty Island.
       </p>
@@ -64,8 +64,8 @@ const Article = () => {
       <p>
       The inspiration gallery, which is where the torch will live, will have floor-to-ceiling glass windows looking out at Lower Manhattan, including the World Trade Center.
       </p>
-
-      <h1>Some facts about the Statue of Liberty</h1>
+     
+      <h2>Some facts about the Statue of Liberty</h2>
       
       <ul>
         <li>Total overall height from the base of the pedestal foundation to the tip of the torch is <b>305 feet, 6 inches</b></li>
@@ -73,11 +73,13 @@ const Article = () => {
         <li>The Statue has a <b>35-foot</b> waistline</li>
         <li>Total weight of the Statue of Liberty is <b>225 tons (or 450,000 pounds)</b></li>
       </ul>
-    </div>
+      </section>
+    
       </article>
     </main>
     </body>
   </html>
+  </div>
   )
 }
 
