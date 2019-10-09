@@ -1,0 +1,15 @@
+ul {
+    background-color: rgb(145, 145, 145);
+    border: 2px dashed dimgray;
+    margin: 4%;
+    list-style-type:none;
+    
+}
+li {
+    float: center;
+    background-color: rgb(248, 244, 244);
+    border: 2px solid rgb(190, 37, 37);
+    padding: 2%;
+    margin: 3% -0.1%;
+    width: 93%;
+}
