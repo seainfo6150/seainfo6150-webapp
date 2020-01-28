@@ -6,7 +6,7 @@ const Article = () => {
       <article>
         <header>
           <h1>The Statue of Liberty's torch heads to new museum</h1> 
-          <p>by Kate Farley (<a href="kate.farley@nytimes.com">kate.farley@nytimes.com</a>) <br/>
+          <p> <address>by Kate Farley (<a href="mailto:kate.farley@nytimes.com">kate.farley@nytimes.com</a>)</address> <br/>
           <time datetime="2018-11-22">November 22, 2018 </time></p> 
          </header>
           <p>The Statue of Liberty's original torch is getting a new home.</p>
