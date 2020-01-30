@@ -1,18 +1,22 @@
 import React from 'react';
 
 
-const ArticleListItem = (props) => {
+const ArticleListItem = ({article}) => {
   
   return (
     <div>
+      <article>
+        <header>
+          <h1>{article.title}</h1>
+        </header>
       <section>
-        <h3>{props.article.title}</h3>
-        <p>{props.article.shortText}</p>
-        <time datetime={props.article.pubYear}>{props.article.pubDate}</time>
-        <button onClick={() => alert(`${props.article.slug}`)}>
+        <p>{article.shortText}</p>
+        <time datetime={article.pubYear}>{article.pubDate}</time>
+        <button onClick={() => alert(`${article.slug}`)}>
         show article slug
         </button>
       </section>
+      </article>
     </div>
   );
 }
