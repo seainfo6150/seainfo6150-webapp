@@ -1,10 +1,11 @@
 import React from 'react';
-import Article from "./Article/Article";
+import ArticleList from "./ArticleList/ArticleList";
+import articles from "./data/articles.json";
 
 function App() {
   return (
     <div className="App">
-      <Article />
+      <ArticleList articles={Object.values(articles)} />
     </div>
   );
 }
