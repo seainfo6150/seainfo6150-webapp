@@ -10,7 +10,7 @@ const Demo = ({ querystring }) => {
   const whichDemo = querystring.match(/\?demo=(.*)/)[1];
   const user = {
     "foo-bar": "baz",
-    name: "April Bingham",
+    name: "Mickey Mouse",
     email: "a.bingham@northeastern.edu",
     graduationYear: 2019,
     graduationPath: ["BS","MS", "PhD"],

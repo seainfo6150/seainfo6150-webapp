@@ -6,25 +6,39 @@ const JSConcepts = (props) => {
   let userName = user.name;
   userName = user.getName();
   const stringSingleQuotes = 'This is a string';
+  console.log('STRING 1', stringSingleQuotes);
   const stringDoubleQuotes = "This is a string that's got an apostrophe";
+  console.log('STRING 2', stringDoubleQuotes);
+
   const stringWithValue = `This is a string with ${userName} embedded`;
+  console.log('STRING 3', stringWithValue);
+
+  let foo = 5;
+  foo = foo + 1;
+
 
   // FUNCTION
   console.log('******************* FUNCTION')
   const addTwoNumbers = (a, b) => {
     return a + b;
   };
+  const doSomething = (parameterFunction) => {
+    // doesOneThing();
+    // doesAnotherThing();
+    parameterFunction(1,2);
+  }
 
   let sum = addTwoNumbers(1, 2);
   console.log("SUM EQUALS", sum);
   sum = addTwoNumbers(3, 4);
   sum = addTwoNumbers(sum, 5);
+  doSomething(addTwoNumbers);
   console.log("UPDATED SUM EQUALS", sum);
 
   // OBJECT
   console.log('******************* OBJECT')
   let anObject = {};
-  anObject.value = "foo";
+  anObject.aKey = addTwoNumbers;
   console.log("anObject", anObject);
 
   // view the console to see this logging out
@@ -81,6 +95,7 @@ const JSConcepts = (props) => {
     }
   }
   printNumberRange(0,100);
+  printNumberRange(100,0);
 
 
   return (
