@@ -7,7 +7,6 @@ const ArticleListItem = ({articlelist})=>{
                   <section>   
                     <h2>{articlelist.title}</h2>
                     <p>{articlelist.shortText}</p>
-                    <p><b>Author:</b>{articlelist.author}</p>
                     <time dateTime={articlelist.pubYear}>
                     {articlelist.pubDate}
                     </time>
