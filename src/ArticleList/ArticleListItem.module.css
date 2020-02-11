@@ -1,0 +1,16 @@
+h2 {
+    color: rgb(210,70,70);
+    font-size: 30px;
+}
+
+p{
+  color: rgb(50,50,50);
+  font-size: 15px;
+}
+
+time{
+    color: rgb(50,50,50);
+    font-size: 13px;
+    font-weight: bold; 
+}
+

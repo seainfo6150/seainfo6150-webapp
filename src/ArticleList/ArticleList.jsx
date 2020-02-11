@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types'
 import ArticleListItem from './ArticleListItem'
+import './ArticleList.module.css'
 
 const ArticleList = props => {
   return (
