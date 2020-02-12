@@ -1,0 +1,8 @@
+.slugButton {
+    background: #c00;
+    color: #fff;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}

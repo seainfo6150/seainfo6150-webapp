@@ -1,0 +1,7 @@
+.container {
+    list-style: none;
+    padding: 20px;
+    margin: 20px;
+    background: #999;
+    border: 1px dashed #666;
+}

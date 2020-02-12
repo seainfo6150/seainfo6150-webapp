@@ -1,0 +1,18 @@
+.container {
+    background: #eee;
+    border: 1px solid #c00;
+    margin-bottom: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+.title {
+    color: #c00;
+    font-size: 2rem;
+    margin: .5rem 0;
+}
+
+.pubDate {
+    font-weight: bold;
+    font-size: smaller;
+}
