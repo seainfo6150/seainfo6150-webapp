@@ -1,9 +1,13 @@
 .container {
     background: #eee;
+    background-image:linear-gradient(to right, rgb(218,0,0),white 20%);
     border: 1px solid #c00;
     margin-bottom: 20px;
     padding: 10px;
     position: relative;
+    margin : 18px 18px 18px 18px;
+    border-radius: 10px;
+    box-shadow:0px 10px 10px rgb(87, 85, 85);
 }
 
 .title {
@@ -15,4 +19,10 @@
 .pubDate {
     font-weight: bold;
     font-size: smaller;
+}
+
+.img{
+    width: 18%;
+    margin: 1%;
+    float: left;
 }
