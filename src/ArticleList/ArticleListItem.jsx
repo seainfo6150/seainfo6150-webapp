@@ -1,20 +1,26 @@
-import React from "react";
-import styles from "./ArticleListItem.module.css";
-import SlugButton from "./SlugButton";
-import ArticleImage from "./ArticleImage";
+import React from 'react';
+import PropTypes from 'prop-types';
+import SlugButton from './SlugButton.jsx'
+import ArticleImage from './ArticleImage'
+import css from './ArticleListItem.module.css'
 
-const ArticleListItem = props => {
-  return (
-    <div className={styles.container}>
-     <div className={styles.img}><ArticleImage article={props.article}/></div>
-     <div className={styles.other}>
-      <h3 className={styles.title}>{props.article.title}</h3>
-      <p>{props.article.shortText}</p>
-      <time className={styles.pubDate} dateTime={props.article.pubYear}>{props.article.pubDate}</time>
-      <div className={styles.button}><SlugButton slug={props.article.slug} buttonText={props.article.author} /></div>
+const ArticleListItem = props => (
+    <div className = {css.container}>
+        <div>
+            {<ArticleImage article = {props.article}/>}
+        </div>
+        <div>
+            <h2 className = "h2">{props.article.title}</h2>
+            <p>{props.article.shortText}</p>
+            <time dateTime = {props.article.pubYear}>{props.article.pubDate}</time>
+            {<SlugButton article = {props.article}/>}
+        </div>
     </div>
-    </div>
-  );
+);
+
+
+ArticleListItem.propTypes = {
+    article: PropTypes.object.isRequired
 };
 
 export default ArticleListItem;

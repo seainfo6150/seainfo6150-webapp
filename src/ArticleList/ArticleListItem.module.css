@@ -1,28 +1,34 @@
-.container {
-    background: #eee;
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    min-height: 100%;
+    font-size: 10px;
+
+}
+
+section{   
     background-image:linear-gradient(to right, rgb(218,0,0),white 20%);
-    border: 1px solid #c00;
-    margin-bottom: 20px;
-    padding: 10px;
-    position: relative;
-    margin : 18px 18px 18px 18px;
-    border-radius: 10px;
-    box-shadow:0px 10px 10px rgb(87, 85, 85);
+    border: 1px solid FireBrick;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 10rem;
+    writing-mode: horizontal-tb;
 }
 
-.title {
-    color: #c00;
-    font-size: 2rem;
-    margin: .5rem 0;
+.title{
+    color: FireBrick;
+    font-size: 30px;
+    margin: 0;
 }
 
-.pubDate {
+.time {
     font-weight: bold;
-    font-size: smaller;
 }
 
 .img{
-    width: 18%;
-    margin: 1%;
+    width: 20%;
+    margin: 1.66%;
+    margin-bottom: 30px;
     float: left;
 }

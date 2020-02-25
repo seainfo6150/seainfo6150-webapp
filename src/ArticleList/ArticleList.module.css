@@ -1,8 +1,50 @@
-.container {
-    list-style: none;
-    padding: 5px;
-    margin: 20px;
-    background: #999;
-    border: 1px dashed #666;
+ul {
+    background: DarkGray;
+    border: 2px dashed DIMGRAY;
+    margin: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     border-radius: 10px;
+}
+
+h2 {
+    color: CRIMSON;
+    font-size: 25px;
+    margin: 0;
+}
+
+img {
+    width: 200px;
+    height: 100px;
+  }
+
+time {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+button {
+    display:block;
+    width: 100%;
+    background: rgb(219, 4, 4);
+    color: white;
+    border-radius: 10px;
+    padding: 5px 30px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+li {
+    margin: 10px;
+    border: 3px solid CRIMSON;
+    border-radius: 5px;  
+    list-style-type: none;
+    padding: 1rem;
+    background-image: linear-gradient(
+        to right,
+        rgba(245, 11, 58, 0.822),
+        rgba(241, 236, 236, 0.842) 10%
+    );
+    box-shadow: 1px 6px 4px 1px DIMGRAY;   
 }
