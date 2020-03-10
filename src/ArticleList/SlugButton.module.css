@@ -1,3 +1,4 @@
+
 .slugButton {
     background: rgb(218, 0, 0);
     color: white;
@@ -6,3 +7,23 @@
     padding: 5px 30px;
     overflow: hidden;
 }
+
+@media (min-width: 600px) {
+    button{
+        float: right;
+        width: 30%;
+    }  
+}
+
+@media (min-width: 750px) {
+    button{
+        float: right;
+        width: 50%;
+    }  
+}
+
+@media (min-width: 1000px) {
+    button{
+        width: 100%;
+    }
+}  

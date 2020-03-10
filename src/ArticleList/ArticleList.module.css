@@ -47,4 +47,52 @@ li {
         rgba(241, 236, 236, 0.842) 10%
     );
     box-shadow: 1px 6px 4px 1px DIMGRAY;   
+
+}
+
+@media (min-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  
+    h2 {
+        font-size: 18px;
+    }
+
+    time {
+        font-weight: bold;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 750px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    time {
+        font-weight: bold;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+    time {
+        font-weight: bold;
+        font-size: 14px;
+    }
 }
