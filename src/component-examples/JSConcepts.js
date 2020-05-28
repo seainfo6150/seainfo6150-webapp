@@ -49,13 +49,23 @@ const JSConcepts = (props) => {
     }
   }
 
+  console.log("Object.keys", Object.keys(user))
+  console.log("Object.getOwnPropertyNames",Object.getOwnPropertyNames(user));
+
   // ARRAY
   console.log('******************* ARRAY')
   const userArray = ["foo", "bar", "baz"];
+
   // view the console to see this logging out
-  userArray.forEach(element => {
-    console.log("ELEMENT", element);
+  let result = userArray.forEach((element, index) => {
+    return `${element}${index}`; 
   });
+  console.log("RESULT", result, userArray[0]);
+  const anotherResult = userArray.map((element, index) => {
+    return `${element}${index}`; 
+  });
+  console.log("ANOTHER RESULT", anotherResult, userArray[0]);
+
   // view the console to see this logging out
   console.log("USER ARRAY", userArray[1]);
   console.log(`USERARRAY HAS ${userArray.length} ELEMENTS`);
@@ -82,21 +92,6 @@ const JSConcepts = (props) => {
   negativeOrPositive(10000);
   negativeOrPositive(0);
   negativeOrPositive("April");
-
-  let printNumberRange = (a,b) => {
-    if (b < a) {
-      console.log("b < a will cause an infinite loop!");
-    } else {
-      let currentNumber = a;
-      while (currentNumber <= b) {
-        console.log(currentNumber);
-        currentNumber = currentNumber + 1;
-      }
-    }
-  }
-  printNumberRange(0,100);
-  printNumberRange(100,0);
-
 
   return (
     <section>
