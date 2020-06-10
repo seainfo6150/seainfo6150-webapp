@@ -1,5 +1,5 @@
 import React from "react";
-import JSConcepts from "./component-examples/JSConcepts.js";
+import JsFundamentals from "./component-examples/JsFundamentals.js";
 import HelloUser from "./component-examples/HelloUser.js";
 import HelloUserClass from "./component-examples/HelloUserClass.js";
 import AddingMachine from "./component-examples/AddingMachine.js";
@@ -23,7 +23,7 @@ const Demo = ({ querystring }) => {
   let content;
   switch (whichDemo) {
     case "concepts":
-      content = <JSConcepts user={user} />;
+      content = <JsFundamentals user={user} />;
       break;
     case "hello":
       content = <HelloUser user={user} />;

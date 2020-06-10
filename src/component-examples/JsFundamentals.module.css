@@ -1,0 +1,8 @@
+.definitionPair {
+    display: flex;
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+}

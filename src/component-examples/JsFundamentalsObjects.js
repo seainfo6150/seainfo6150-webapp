@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const JSConcepts = (props) => {
+const JsFundamentals = (props) => {
   const user = props.user;
   let userName = user.name;
   userName = user.getName();
@@ -95,7 +95,7 @@ const JSConcepts = (props) => {
 
   return (
     <section>
-      <header>JSConcepts component</header>
+      <header>JsFundamentals component</header>
       <dl>
         <dt>Name:</dt>
         <dd>{userName}</dd>
@@ -114,8 +114,8 @@ const JSConcepts = (props) => {
   );
 };
 
-JSConcepts.propTypes = {
+JsFundamentals.propTypes = {
   user: PropTypes.object.isRequired
 };
 
-export default JSConcepts;
+export default JsFundamentals;
