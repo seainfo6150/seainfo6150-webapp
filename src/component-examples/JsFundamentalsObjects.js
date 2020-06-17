@@ -1,121 +1,156 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React, { useEffect, useState } from "react";
 
-const JsFundamentals = (props) => {
-  const user = props.user;
-  let userName = user.name;
-  userName = user.getName();
-  const stringSingleQuotes = 'This is a string';
-  console.log('STRING 1', stringSingleQuotes);
-  const stringDoubleQuotes = "This is a string that's got an apostrophe";
-  console.log('STRING 2', stringDoubleQuotes);
+import styles from "./JsFundamentals.module.css";
 
-  const stringWithValue = `This is a string with ${userName} embedded`;
-  console.log('STRING 3', stringWithValue);
+const DefinitionPair = (props) => {
+  return (
+    <div className={styles.definitionPair}>
+      <dt>{props.objectKey}:</dt>
+      <dd>
+        {typeof props.value === "object"
+          ? JSON.stringify(props.value)
+          : `${props.value}`}
+      </dd>
+    </div>
+  );
+};
 
-  let foo = 5;
-  foo = foo + 1;
+let user = {
+  "foo-bar": "baz",
+  id: "aprilbingham",
+  email: "a.bingham@northeastern.edu",
+  graduationYear: 2019,
+  graduationPath: ["BS", "MS", "PhD"],
+  classes: {
+    INFO6150: { title: "Web UI Engineering" },
+  },
+  getDisplayName: () => {
+    return "April B.";
+  },
+};
 
+let anObject = {};
+anObject.aUserNameFunction = user.getDisplayName;
+anObject.userName = anObject.aUserNameFunction();
+anObject.userId = user.id;
+anObject.userId = anObject.userId + " (this is a userId)";
 
-  // FUNCTION
-  console.log('******************* FUNCTION')
-  const addTwoNumbers = (a, b) => {
-    return a + b;
-  };
-  const doSomething = (parameterFunction) => {
-    // doesOneThing();
-    // doesAnotherThing();
-    parameterFunction(1,2);
+let aCopyOfUser = user;
+aCopyOfUser["foo-bar"] = "Blah";
+let anIndependentCopyOfUser = Object.assign({}, user);
+anIndependentCopyOfUser["foo-bar"]= "Baz";
+
+const JsFundamentalsObjects = (props) => {
+  const [currentObject, setCurrentObject] = useState({});
+  const [currentObjectName, setCurrentObjectName] = useState();
+
+  function updateUser() {
+    user.classes = {
+      ...user.classes,
+      INFO6250: { title: "Lots of Javascript" },
+    };
+    setCurrentObject(user);
+    setCurrentObjectName("user");
   }
 
-  let sum = addTwoNumbers(1, 2);
-  console.log("SUM EQUALS", sum);
-  sum = addTwoNumbers(3, 4);
-  sum = addTwoNumbers(sum, 5);
-  doSomething(addTwoNumbers);
-  console.log("UPDATED SUM EQUALS", sum);
+  function deleteUserKeys() {
+    Object.keys(user).forEach((key) => delete user[key]);
+    setCurrentObject(user);
+    setCurrentObjectName("user");
+  }
 
-  // OBJECT
-  console.log('******************* OBJECT')
-  let anObject = {};
-  anObject.aKey = addTwoNumbers;
-  console.log("anObject", anObject);
-
-  // view the console to see this logging out
-  for (const key in user) {
-    if (user.hasOwnProperty(key)) {
-      const element = user[key];
-      console.log("ELEMENT", element);
+  let forInObjectContent = [];
+  for (const key in currentObject) {
+    if (currentObject.hasOwnProperty(key)) {
+      forInObjectContent.push(
+        <DefinitionPair key={key} value={currentObject[key]} objectKey={key} />
+      );
     }
   }
-
-  console.log("Object.keys", Object.keys(user))
-  console.log("Object.getOwnPropertyNames",Object.getOwnPropertyNames(user));
-
-  // ARRAY
-  console.log('******************* ARRAY')
-  const userArray = ["foo", "bar", "baz"];
-
-  // view the console to see this logging out
-  let result = userArray.forEach((element, index) => {
-    return `${element}${index}`; 
-  });
-  console.log("RESULT", result, userArray[0]);
-  const anotherResult = userArray.map((element, index) => {
-    return `${element}${index}`; 
-  });
-  console.log("ANOTHER RESULT", anotherResult, userArray[0]);
-
-  // view the console to see this logging out
-  console.log("USER ARRAY", userArray[1]);
-  console.log(`USERARRAY HAS ${userArray.length} ELEMENTS`);
-
-  userArray.push("bleem");
-  console.log("UPDATED USER ARRAY", userArray);
-  console.log(`USERARRAY HAS ${userArray.length} ELEMENTS`);
-
-
-  // CONTROL STATEMENTS
-  console.log('******************* CONTROL STATEMENTS');
-  let negativeOrPositive = (value) => {
-    if (value > 0) {
-      console.log(`${value} is positive!`);
-    } else if (value < 0) {
-      console.log(`${value} is negative!`);
-    } else if (value === 0) {
-      console.log(`${value} is 0!`);
-    } else {
-      console.log(`${value} doesn't seem to be a number!`);
-    }
-  }
-  negativeOrPositive(-200);
-  negativeOrPositive(10000);
-  negativeOrPositive(0);
-  negativeOrPositive("April");
 
   return (
     <section>
-      <header>JsFundamentals component</header>
+      <header>JsFundamentalsObjects component</header>
+
+      <h2>Choose an object to view</h2>
+      <ul className={styles.list}>
+        <li>
+          <button
+            onClick={() => {
+              setCurrentObject(anObject);
+              setCurrentObjectName("anObject");
+            }}
+          >
+            anObject
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
+              setCurrentObject(user);
+              setCurrentObjectName("user");
+            }}
+          >
+            user
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
+              setCurrentObject(aCopyOfUser);
+              setCurrentObjectName("aCopyOfUser");
+            }}
+          >
+            aCopyOfUser
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
+              setCurrentObject(anIndependentCopyOfUser);
+              setCurrentObjectName("anIndependentCopyOfUser");
+            }}
+          >
+            anIndependentCopyOfUser
+          </button>
+        </li>
+      </ul>
+
+      <h2>Do some stuff</h2>
+      <ul className={styles.list}>
+        <li>
+          <button onClick={() => updateUser()}>Update user object</button>
+          <button onClick={() => deleteUserKeys()}>Delete user keys</button>
+        </li>
+      </ul>
+
+      <h2>Viewing current object: {currentObjectName}</h2>
+      <h3>using Object.keys</h3>
       <dl>
-        <dt>Name:</dt>
-        <dd>{userName}</dd>
-        <dt>Email:</dt>
-        <dd>{user.email}</dd>
-        <dt>Baz</dt>
-        <dd>{user["foo-bar"]}</dd>
-        <dt>stringDoubleQuotes</dt>
-        <dd>{stringDoubleQuotes}</dd>
-        <dt>stringSingleQuotes</dt>
-        <dd>{stringSingleQuotes}</dd>
-        <dt>stringWithValue</dt>
-        <dd>{stringWithValue}</dd>
+        {Object.keys(currentObject).map((key) => (
+          <DefinitionPair
+            key={key}
+            value={currentObject[key]}
+            objectKey={key}
+          />
+        ))}
       </dl>
+
+      <h3>using Object.getOwnPropertyNames</h3>
+      <dl>
+        {Object.getOwnPropertyNames(currentObject).map((key) => (
+          <DefinitionPair
+            key={key}
+            value={currentObject[key]}
+            objectKey={key}
+          />
+        ))}
+      </dl>
+
+      <h3>using for...in</h3>
+      <dl>{forInObjectContent}</dl>
     </section>
   );
 };
 
-JsFundamentals.propTypes = {
-  user: PropTypes.object.isRequired
-};
-
-export default JsFundamentals;
+export default JsFundamentalsObjects;

@@ -6,3 +6,7 @@
     display: flex;
     list-style-type: none;
 }
+
+.section {
+    margin-bottom: 2rem;
+}

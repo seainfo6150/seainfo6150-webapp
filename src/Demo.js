@@ -8,29 +8,18 @@ import CSSModule2 from "./component-examples/CSSModule2/CSSModule2.jsx";
 
 const Demo = ({ querystring }) => {
   const whichDemo = querystring.match(/\?demo=(.*)/)[1];
-  const user = {
-    "foo-bar": "baz",
-    name: "Mickey Mouse",
-    email: "a.bingham@northeastern.edu",
-    graduationYear: 2019,
-    graduationPath: ["BS","MS", "PhD"],
-    classes: {
-      INFO6150: { title: "Web UI Engineering"}
-    },
-    getName: () => { return "April Bingham"; }
-  };
-
+  
   let content;
   switch (whichDemo) {
     case "concepts":
-      content = <JsFundamentals user={user} />;
+      content = <JsFundamentals />;
       break;
-    case "hello":
-      content = <HelloUser user={user} />;
-      break;
-    case "hello-user-class":
-      content = <HelloUserClass user={user} />;
-      break;
+    // case "hello":
+    //   content = <HelloUser />;
+    //   break;
+    // case "hello-user-class":
+    //   content = <HelloUserClass />;
+    //   break;
     case "adding":
       content = (
         <AddingMachine startNum={10}>This Is My Adding Machine</AddingMachine>

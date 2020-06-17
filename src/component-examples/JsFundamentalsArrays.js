@@ -67,14 +67,14 @@ const JsFundamentalsArrays = () => {
   return (
     <section>
       <header>Arrays</header>
-      <nav>
-        <button onClick={() => pushIt(myArray)}>Push it</button>
-        <button onClick={() => popIt(myArray)}>Pop it</button>
-        <button onClick={() => unshiftIt(myArray)}>Unshift it</button>
-        <button onClick={() => shiftIt(myArray)}>Shift it</button>
-        <button onClick={() => forEachIt(myArray)}>forEach it</button>
-        <button onClick={() => mapIt(myArray)}>map it</button>
-      </nav>
+      <ul className={styles.list}>
+        <li><button onClick={() => pushIt(myArray)}>Push it</button></li>
+        <li><button onClick={() => popIt(myArray)}>Pop it</button></li>
+        <li><button onClick={() => unshiftIt(myArray)}>Unshift it</button></li>
+        <li><button onClick={() => shiftIt(myArray)}>Shift it</button></li>
+        <li><button onClick={() => forEachIt(myArray)}>forEach it</button></li>
+        <li><button onClick={() => mapIt(myArray)}>map it</button></li>
+      </ul>
 
       <p>The element at index 0 is {JSON.stringify(myArray[0])}</p>
       <p>The element at index 3 is {JSON.stringify(myArray[3])}</p>

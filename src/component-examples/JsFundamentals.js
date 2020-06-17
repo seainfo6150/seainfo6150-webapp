@@ -23,7 +23,7 @@ const JsFundamentals = (props) => {
   function onSelectTopic(topic) {
     setTopic(topic);
   }
-
+  
   let displayContent;
   switch (topic) {
     case "arrays":
@@ -39,10 +39,12 @@ const JsFundamentals = (props) => {
       displayContent = <JsFundamentalsFunctions />;
       break;
     case "objects":
-      displayContent = <JsFundamentalsObjects />;
+      displayContent = (
+        <JsFundamentalsObjects />
+      );
       break;
     case "operators":
-      displayContent = <JsFundamentalsOperators user={props.user} />;
+      displayContent = <JsFundamentalsOperators />;
       break;
     case "variables":
       displayContent = <JsFundamentalsVariables />;
