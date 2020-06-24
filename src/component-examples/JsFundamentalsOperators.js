@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
-
 import styles from "./JsFundamentals.module.css";
 
 const JsFundamentalsOperators = () => {

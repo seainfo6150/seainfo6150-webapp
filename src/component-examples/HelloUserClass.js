@@ -5,12 +5,16 @@ class HelloUserClass extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      greeting: "Greetings"
+      greeting: "Greetings",
+      numClicks: 0
     };
+    this.buttonWasClicked = this.buttonWasClicked.bind(this);
   }
 
-  buttonWasClicked = () => {
-    alert(`${this.state.greeting} ${this.props.user.name}`)
+  buttonWasClicked() {
+    this.setState({ numClicks: this.state.numClicks + 1}, () => {
+      alert(`${this.state.greeting} ${this.props.user.name}, this button was clicked ${this.state.numClicks} times`)
+    })
   }
 
   render() {
@@ -26,7 +30,9 @@ class HelloUserClass extends Component {
 }
 
 HelloUserClass.propTypes = {
-  user: PropTypes.object.isRequired
+  user: PropTypes.shape({ 
+    name: PropTypes.string.isRequired 
+  }).isRequired
 };
 
 export default HelloUserClass;
