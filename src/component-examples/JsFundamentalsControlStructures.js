@@ -89,7 +89,7 @@ const JsFundamentalsControlStructures = () => {
 
   return (
     <section>
-      <header>Control structures</header>
+      <header><h2>Control structures</h2></header>
       <form>
         <fieldset>
           <legend>Negative or positive?</legend>

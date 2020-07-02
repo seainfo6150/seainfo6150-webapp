@@ -42,26 +42,26 @@ const JsFundamentalsFunctions = () => {
 
   return (
     <section>
-      <header>Functions</header>
+      <header><h2>Functions</h2></header>
       <form onSubmit={submitAddTwoNumbersForm}>
         <fieldset>
           <legend>addTwoNumbers</legend>
           <ul className={styles.list}>
-            <li>
+            <li className={styles.listItem}>
               <input
                 type="button"
                 onClick={() => setAddTwoNumbersResult(addTwoNumbers(1, 2))}
                 value="addTwoNumbers(1,2)"
               />
             </li>
-            <li>
+            <li className={styles.listItem}>
               <input
                 type="button"
                 onClick={() => setAddTwoNumbersResult(addTwoNumbers(10, 5))}
                 value="addTwoNumbers(10,5)"
               />
             </li>
-            <li>
+            <li className={styles.listItem}>
               <input
                 type="button"
                 onClick={() => setAddTwoNumbersResult(addTwoNumbers(0, -1))}
@@ -87,7 +87,7 @@ const JsFundamentalsFunctions = () => {
         <fieldset>
           <legend>negativeOrPositive</legend>
           <ul className={styles.list}>
-            <li>
+            <li className={styles.listItem}>
               <input
                 type="button"
                 onClick={() =>
@@ -96,7 +96,7 @@ const JsFundamentalsFunctions = () => {
                 value="negativeOrPositive(10000)"
               />
             </li>
-            <li>
+            <li className={styles.listItem}>
               <input
                 type="button"
                 onClick={() =>
@@ -105,7 +105,7 @@ const JsFundamentalsFunctions = () => {
                 value="negativeOrPositive(-82)"
               />
             </li>
-            <li>
+            <li className={styles.listItem}>
               <input
                 type="button"
                 onClick={() =>
@@ -114,7 +114,7 @@ const JsFundamentalsFunctions = () => {
                 value="negativeOrPositive(0)"
               />
             </li>
-            <li>
+            <li className={styles.listItem}>
               <input
                 type="button"
                 onClick={() =>

@@ -8,47 +8,47 @@ const JsFundamentalsOperators = () => {
 
   return (
     <section className={styles.section}>
-      <header>Operators</header>
+      <header><h2>Operators</h2></header>
 
       <section className={styles.section}>
         <header>Mathematical</header>
         <ul className={styles.list}>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setCurrentNumber(currentNumber + 2)}
               value=" + 2 (add)"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setCurrentNumber(currentNumber - 2)}
               value=" - 2 (subtract)"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setCurrentNumber(currentNumber * 2)}
               value=" * 2 (multiply)"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setCurrentNumber(currentNumber / 2)}
               value=" / 2 (divide)"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setCurrentNumber(currentNumber % 2)}
               value=" % 2 (modulo)"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setCurrentNumber(currentNumber ** 2)}
@@ -64,35 +64,35 @@ const JsFundamentalsOperators = () => {
       <section className={styles.section}>
         <header>Comparison</header>
         <ul className={styles.list}>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setComparisonResult(currentNumber < 2)}
               value="currentNumber < 2"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setComparisonResult(currentNumber <= 2)}
               value="currentNumber <= 2"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setComparisonResult(currentNumber >= 2)}
               value="currentNumber >= 2"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setComparisonResult(currentNumber > 2)}
               value="currentNumber > 2"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setComparisonResult(currentNumber === 2)}
@@ -108,21 +108,21 @@ const JsFundamentalsOperators = () => {
       <section className={styles.section}>
         <header>Operators with strings</header>
         <ul className={styles.list}>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setCurrentNumber("2" + "2")}
               value=" '2' + '2' (addition of strings)"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setComparisonResult("2" === 2)}
               value="'2' === 2"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setComparisonResult("2" == 2)}
@@ -139,63 +139,63 @@ const JsFundamentalsOperators = () => {
       <section className={styles.section}>
         <header>Logical</header>
         <ul className={styles.list}>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setLogicResult(!true)}
               value="!true"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setLogicResult(!false)}
               value="!false"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setLogicResult(!1)}
               value="!1"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setLogicResult(!0)}
               value="!0"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setLogicResult(!!"house")}
               value="!!'house'"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setLogicResult(!!null)}
               value="!!null"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setLogicResult(!!0)}
               value="!!0"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setLogicResult(!![])}
               value="!![]"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setLogicResult(!!{})}
@@ -204,28 +204,28 @@ const JsFundamentalsOperators = () => {
           </li>
         </ul>
         <ul className={styles.list}>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setLogicResult("dog" || "boy" || "girl")}
               value="'dog' || 'boy' || 'girl'"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setLogicResult(false || "boy" || "girl")}
               value="false || 'boy' || 'girl'"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setLogicResult(false || null || "girl")}
               value="false || null || 'girl'"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setLogicResult(false || null || undefined)}
@@ -234,28 +234,28 @@ const JsFundamentalsOperators = () => {
           </li>
         </ul>
         <ul className={styles.list}>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setLogicResult("dog" && "boy" && "girl")}
               value="'dog' &amp;&amp; 'boy' &amp;&amp; 'girl'"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setLogicResult(false && "boy" && "girl")}
               value="false &amp;&amp; 'boy' &amp;&amp; 'girl'"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setLogicResult("dog" && null && "girl")}
               value="'dog' &amp;&amp; null &amp;&amp; 'girl'"
             />
           </li>
-          <li>
+          <li className={styles.listItem}>
             <input
               type="button"
               onClick={() => setLogicResult("dog" && "boy" && undefined)}

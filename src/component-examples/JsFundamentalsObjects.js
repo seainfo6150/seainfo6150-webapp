@@ -70,11 +70,11 @@ const JsFundamentalsObjects = (props) => {
 
   return (
     <section>
-      <header>JsFundamentalsObjects component</header>
+      <header><h2>Objects</h2></header>
 
-      <h2>Choose an object to view</h2>
+      <h3>Choose an object to view</h3>
       <ul className={styles.list}>
-        <li>
+        <li className={styles.listItem}>
           <button
             onClick={() => {
               setCurrentObject(anObject);
@@ -84,7 +84,7 @@ const JsFundamentalsObjects = (props) => {
             anObject
           </button>
         </li>
-        <li>
+        <li className={styles.listItem}>
           <button
             onClick={() => {
               setCurrentObject(user);
@@ -94,7 +94,7 @@ const JsFundamentalsObjects = (props) => {
             user
           </button>
         </li>
-        <li>
+        <li className={styles.listItem}>
           <button
             onClick={() => {
               setCurrentObject(aCopyOfUser);
@@ -104,7 +104,7 @@ const JsFundamentalsObjects = (props) => {
             aCopyOfUser
           </button>
         </li>
-        <li>
+        <li className={styles.listItem}>
           <button
             onClick={() => {
               setCurrentObject(anIndependentCopyOfUser);
@@ -116,16 +116,16 @@ const JsFundamentalsObjects = (props) => {
         </li>
       </ul>
 
-      <h2>Do some stuff</h2>
+      <h3>Do some stuff</h3>
       <ul className={styles.list}>
-        <li>
+        <li className={styles.listItem}>
           <button onClick={() => updateUser()}>Update user object</button>
           <button onClick={() => deleteUserKeys()}>Delete user keys</button>
         </li>
       </ul>
 
-      <h2>Viewing current object: {currentObjectName}</h2>
-      <h3>using Object.keys</h3>
+      <h3>Viewing current object: {currentObjectName}</h3>
+      <h4>using Object.keys</h4>
       <dl>
         {Object.keys(currentObject).map((key) => (
           <DefinitionPair
@@ -136,7 +136,7 @@ const JsFundamentalsObjects = (props) => {
         ))}
       </dl>
 
-      <h3>using Object.getOwnPropertyNames</h3>
+      <h4>using Object.getOwnPropertyNames</h4>
       <dl>
         {Object.getOwnPropertyNames(currentObject).map((key) => (
           <DefinitionPair
@@ -147,7 +147,7 @@ const JsFundamentalsObjects = (props) => {
         ))}
       </dl>
 
-      <h3>using for...in</h3>
+      <h4>using for...in</h4>
       <dl>{forInObjectContent}</dl>
     </section>
   );

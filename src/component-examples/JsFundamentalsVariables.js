@@ -25,15 +25,16 @@ const JsFundamentalsVariables = () => {
  
   return (
     <section>
+      <header><h2>Variables</h2></header>
       <ul className={styles.list}>
-        <li><button onClick={() => updateLetVariable(2)}>letVariable = 2</button></li>
-        <li><button onClick={() => updateLetVariable(10)}>letVariable = 10</button></li>
-        <li><button onClick={() => updateLetVariable("house")}>letVariable = house</button></li>
+        <li className={styles.listItem}><button onClick={() => updateLetVariable(2)}>letVariable = 2</button></li>
+        <li className={styles.listItem}><button onClick={() => updateLetVariable(10)}>letVariable = 10</button></li>
+        <li className={styles.listItem}><button onClick={() => updateLetVariable("house")}>letVariable = house</button></li>
       </ul>
       <ul className={styles.list}>
-        <li><button onClick={() => updateConstVariable(2)}>constVariable = 2</button></li>
-        <li><button onClick={() => updateConstVariable(10)}>constVariable = 10</button></li>
-        <li><button onClick={() => updateConstVariable("house")}>constVariable = house</button></li>
+        <li className={styles.listItem}><button onClick={() => updateConstVariable(2)}>constVariable = 2</button></li>
+        <li className={styles.listItem}><button onClick={() => updateConstVariable(10)}>constVariable = 10</button></li>
+        <li className={styles.listItem}><button onClick={() => updateConstVariable("house")}>constVariable = house</button></li>
       </ul>
     </section>
   );

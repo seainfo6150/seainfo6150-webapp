@@ -6,6 +6,9 @@
     display: flex;
     list-style-type: none;
 }
+.listItem {
+    margin-right: 1rem;
+}
 
 .section {
     margin-bottom: 2rem;

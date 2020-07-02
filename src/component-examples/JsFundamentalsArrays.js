@@ -64,14 +64,14 @@ const JsFundamentalsArrays = () => {
 
   return (
     <section>
-      <header>Arrays</header>
+      <header><h2>Arrays</h2></header>
       <ul className={styles.list}>
-        <li><button onClick={() => pushIt(myArray)}>Push it</button></li>
-        <li><button onClick={() => popIt(myArray)}>Pop it</button></li>
-        <li><button onClick={() => unshiftIt(myArray)}>Unshift it</button></li>
-        <li><button onClick={() => shiftIt(myArray)}>Shift it</button></li>
-        <li><button onClick={() => forEachIt(myArray)}>forEach it</button></li>
-        <li><button onClick={() => mapIt(myArray)}>map it</button></li>
+        <li className={styles.listItem}><button onClick={() => pushIt(myArray)}>Push it</button></li>
+        <li className={styles.listItem}><button onClick={() => popIt(myArray)}>Pop it</button></li>
+        <li className={styles.listItem}><button onClick={() => unshiftIt(myArray)}>Unshift it</button></li>
+        <li className={styles.listItem}><button onClick={() => shiftIt(myArray)}>Shift it</button></li>
+        <li className={styles.listItem}><button onClick={() => forEachIt(myArray)}>forEach it</button></li>
+        <li className={styles.listItem}><button onClick={() => mapIt(myArray)}>map it</button></li>
       </ul>
 
       <p>The element at index 0 is {JSON.stringify(myArray[0])}</p>

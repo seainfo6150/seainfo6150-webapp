@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
+import { Route, Switch, Link, useRouteMatch } from "react-router-dom";
+
+import styles from "./JsFundamentals.module.css";
 
 import JsFundamentalsArrays from "./JsFundamentalsArrays";
 import JsFundamentalsControlStructures from "./JsFundamentalsControlStructures";
@@ -8,8 +10,10 @@ import JsFundamentalsFunctions from "./JsFundamentalsFunctions";
 import JsFundamentalsObjects from "./JsFundamentalsObjects";
 import JsFundamentalsOperators from "./JsFundamentalsOperators";
 import JsFundamentalsVariables from "./JsFundamentalsVariables";
+import JsFundamentalsDataFetching from "./JsFundamentalsDataFetching";
 
 const JsFundamentals = (props) => {
+  let { url } = useRouteMatch();
   const topics = [
     "arrays",
     "controlstructures",
@@ -18,59 +22,32 @@ const JsFundamentals = (props) => {
     "objects",
     "operators",
     "variables",
+    "datafetching",
   ];
-  const [topic, setTopic] = useState("");
-  function onSelectTopic(topic) {
-    setTopic(topic);
-  }
-  
-  let displayContent;
-  switch (topic) {
-    case "arrays":
-      displayContent = <JsFundamentalsArrays />;
-      break;
-    case "controlstructures":
-      displayContent = <JsFundamentalsControlStructures />;
-      break;
-    case "datatypes":
-      displayContent = <JsFundamentalsDataTypes />;
-      break;
-    case "functions":
-      displayContent = <JsFundamentalsFunctions />;
-      break;
-    case "objects":
-      displayContent = (
-        <JsFundamentalsObjects />
-      );
-      break;
-    case "operators":
-      displayContent = <JsFundamentalsOperators />;
-      break;
-    case "variables":
-      displayContent = <JsFundamentalsVariables />;
-      break;
-    default:
-      displayContent = "";
-      break;
-  }
-
   return (
     <section>
-      <header>JsFundamentals component</header>
+      <header><h1>JsFundamentals component</h1></header>
       <nav>
-        {topics.map((t) => (
-          <button key={t} onClick={() => onSelectTopic(t)}>
-            {t}
-          </button>
-        ))}
+        <ul className={styles.list}>
+          {topics.map((t) => (
+            <li className={styles.listItem} key={t}>
+              <Link to={`${url}/${t}`}>{t}</Link>
+            </li>
+          ))}
+        </ul>
       </nav>
-      {displayContent}
+      <Switch>
+        <Route path={`${url}/arrays`}><JsFundamentalsArrays /></Route>
+        <Route path={`${url}/controlstructures`}><JsFundamentalsControlStructures /></Route>
+        <Route path={`${url}/datatypes`}><JsFundamentalsDataTypes /></Route>
+        <Route path={`${url}/functions`}><JsFundamentalsFunctions /></Route>
+        <Route path={`${url}/objects`}><JsFundamentalsObjects /></Route>
+        <Route path={`${url}/operators`}><JsFundamentalsOperators /></Route>
+        <Route path={`${url}/variables`}><JsFundamentalsVariables /></Route>
+        <Route path={`${url}/datafetching`}><JsFundamentalsDataFetching /></Route>
+      </Switch>
     </section>
   );
-};
-
-JsFundamentals.propTypes = {
-  user: PropTypes.object.isRequired,
 };
 
 export default JsFundamentals;
