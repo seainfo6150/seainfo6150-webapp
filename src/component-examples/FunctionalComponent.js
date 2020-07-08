@@ -1,7 +1,11 @@
-import React from 'react';
+import React from "react";
+import PropTypes from "prop-types";
 
-const FunctionalComponent = (props) => {
-  return (<div></div>);
-}
+const FunctionalComponent = ({ name = "World" }) => {
+  return <div>Hello {name}, here&rsquo;s my functional component</div>;
+};
 
+FunctionalComponent.propTypes = {
+  name: PropTypes.string.isRequired
+};
 export default FunctionalComponent;

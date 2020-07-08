@@ -8,6 +8,9 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.3.0"
   },
+  "devDependencies": {
+    "@testing-library/react": "10.4.5"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

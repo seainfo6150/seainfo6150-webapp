@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FunctionalComponent tests renders correctly 1`] = `
+<div>
+  <div>
+    Hello 
+    World
+    , here’s my functional component
+  </div>
+</div>
+`;
+
+exports[`FunctionalComponent tests renders correctly when passed a name prop 1`] = `
+<div>
+  <div>
+    Hello 
+    April
+    , here’s my functional component
+  </div>
+</div>
+`;
