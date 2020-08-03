@@ -1,5 +1,6 @@
 import React from "react";
-import styles from "./JsFundamentals.module.css";
+import styles from "../examples.module.css";
+
 
 const JsFundamentalsVariables = () => {
   let letVariable;

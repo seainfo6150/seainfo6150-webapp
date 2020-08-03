@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Route, Switch, Link, useRouteMatch } from "react-router-dom";
 
-import styles from "./JsFundamentals.module.css";
+import styles from "../examples.module.css";
 
 import JsFundamentalsArrays from "./JsFundamentalsArrays";
 import JsFundamentalsControlStructures from "./JsFundamentalsControlStructures";

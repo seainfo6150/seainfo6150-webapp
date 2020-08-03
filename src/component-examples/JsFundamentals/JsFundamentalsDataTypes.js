@@ -1,7 +1,8 @@
 /* global BigInt */
 import React, { useState } from "react";
 
-import styles from "./JsFundamentals.module.css";
+import styles from "../examples.module.css";
+
 
 const JsFundamentalsDataTypes = () => {
   const [value, setValue] = useState();

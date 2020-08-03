@@ -1,16 +1,18 @@
-import React, {useState} from "react";
-import { Switch, Route, Link, useRouteMatch} from "react-router-dom";
-import JsFundamentals from "./component-examples/JsFundamentals.js";
-import HelloUser from "./component-examples/HelloUser.js";
-import HelloUserClass from "./component-examples/HelloUserClass.js";
-import AddingMachine from "./component-examples/AddingMachine.js";
-import AddingMachineHooks from "./component-examples/AddingMachineHooks.js";
+import React, { useState } from "react";
+import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
+import JsFundamentals from "./component-examples/JsFundamentals/JsFundamentals.js";
+import HelloUser from "./component-examples/HelloUser/HelloUser.js";
+import HelloUserClass from "./component-examples/HelloUser/HelloUserClass.js";
+import AddingMachine from "./component-examples/AddingMachine/AddingMachine.js";
+import AddingMachineHooks from "./component-examples/AddingMachine/AddingMachineHooks.js";
 import List from "./component-examples/List.js";
 import CSSModule from "./component-examples/CSSModule/CSSModule.jsx";
 import CSSModule2 from "./component-examples/CSSModule2/CSSModule2.jsx";
+import Edgar from "./component-examples/EdgarAllenPoe/EdgarAllenPoeArticle.jsx";
+import styles from "./component-examples/examples.module.css";
 
 const Demo = (props) => {
-  let {url} = useRouteMatch();
+  let { url } = useRouteMatch();
 
   const users = [
     {
@@ -35,32 +37,31 @@ const Demo = (props) => {
     <div className="Demo">
       <header>
         <nav>
-          <ul>
+          <ul className={styles.list}>
             {/* these links should show you how to connect up a link to a specific route */}
-            <li>
+            <li className={styles.listItem}>
               <Link to={`${url}/concepts`}>Javascript Fundamentals</Link>
             </li>
-            <li>
+            <li className={styles.listItem}>
               <Link to={`${url}/hello-user`}>Hello User</Link>
             </li>
-            <li>
-              <Link to={`${url}/hello-user-class`}>
-                Hello User (class)
-              </Link>
+            <li className={styles.listItem}>
+              <Link to={`${url}/hello-user-class`}>Hello User (class)</Link>
             </li>
-            <li>
+            <li className={styles.listItem}>
               <Link to={`${url}/adding`}>Adding Machine</Link>
             </li>
-            <li>
-              <Link to={`${url}/adding-hooks`}>
-                Adding Machine (hooks)
-              </Link>
+            <li className={styles.listItem}>
+              <Link to={`${url}/adding-hooks`}>Adding Machine (hooks)</Link>
             </li>
-            <li>
+            <li className={styles.listItem}>
               <Link to={`${url}/list`}>List</Link>
             </li>
-            <li>
+            <li className={styles.listItem}>
               <Link to={`${url}/cssmodules`}>CSS Modules</Link>
+            </li>{" "}
+            <li className={styles.listItem}>
+              <Link to={`${url}/edgar`}>Edgar Allen Poe HTML</Link>
             </li>
           </ul>
         </nav>
@@ -94,6 +95,9 @@ const Demo = (props) => {
             <CSSModule />
             <CSSModule2 />
           </>
+        </Route>
+        <Route path={`${url}/edgar`} exact>
+          <Edgar />
         </Route>
         <Route path={`${url}/baz`} exact>
           <div>Hello</div>

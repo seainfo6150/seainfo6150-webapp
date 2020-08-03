@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-import styles from "./JsFundamentals.module.css";
+import styles from "../examples.module.css";
+
 
 const DefinitionPair = (props) => {
   return (

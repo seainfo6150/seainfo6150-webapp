@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css?family=UnifrakturMaguntia&display=swap");
+
+@font-face {
+  font-family: "Rowdies Bold";
+  src: url("./Rowdies/Rowdies-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rowdies Light";
+  src: url("./Rowdies/Rowdies-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rowdies Regular";
+  src: url("./Rowdies/Rowdies-Regular.ttf") format("truetype");
+}
+
+.page {
+  color: #555;
+  font-family: "Playfair Display", "Garamond", "Times New Roman", Times, serif;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  width: 80vw;
+  line-height: 2;
+  background: repeat-y 100% 0 url(raven.svg);
+  background-size: 100px;
+}
+
+.tag {
+  position: fixed;
+  background: red;
+  color: #fff;
+  padding: 1rem;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  font-size: 10px;
+}
+
+.page time {
+  font-family: "Rowdies Bold", serif;
+}
+
+.page a:hover {
+  font-size: 1.2em;
+}
+.page *::selection {
+  background: purple;
+  color: yellow;
+}
+
+.page h1,
+.page h2,
+.page h3,
+.page h4,
+.page h5,
+.page h6 {
+  font-family: "UnifrakturMaguntia", cursive;
+}
+
+.highlighted {
+  background: yellow;
+}
+
+.crazyHighlighted {
+  background: rgba(255, 102, 0, 0.5);
+  text-decoration: wavy green underline;
+}
+
+.redacted {
+  background: black;
+  color: black;
+  display: block;
+}
+
+.strike {
+  text-decoration: wavy black line-through;
+}
+
+.address {
+  border-bottom: 5px double purple;
+  border-top: 5px double purple;
+  font-style: normal;
+  margin: 2rem 0;
+  padding: 2rem 0;
+  text-transform: uppercase;
+}
+
+.citationPoem,
+.citationStory,
+.citationArticle {
+  font-style: normal;
+}
+
+.longQuote {
+  color: #000;
+  font-weight: 800;
+  font-style: italic;
+  margin: 0 4rem;
+}
+
+.longQuote::first-line {
+  color: blue;
+}
+
+.longQuote::first-letter {
+  font-size: 5rem;
+}
+
+.pageChrome {
+  background: linear-gradient(fuchsia, purple);
+  color: #fff;
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.pageChrome a {
+  color: #fff;
+}
+.pageChrome a:hover {
+  color: violet;
+}
+.pageChrome a:visited {
+  color: violet;
+}
+.pageChrome a:active {
+  color: fuchsia;
+}
+
+.pageSection {
+  padding: 3rem;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+   opacity: 1;
+  }
+}
+
+.pageHeader {
+  animation-name: appear;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}
+
+.pageHeader h3 {
+  font-size: 10rem;
+  margin: 0;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.noDisplay {
+  display: none;
+}
+
+.pageHeader ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mainNav {
+  overflow: auto;
+}
+
+.mainNavLinks > li {
+  display: inline;
+}
+
+.mainNavLinks > li + li {
+  margin-left: 1rem;
+}
+
+.articleHeader {
+  text-align: center;
+}
+
+.articleHeader .address {
+  font-weight: bold;
+}
+
+.articleHeader [datetime="2019-09-15"] {
+  border: 1px solid red;
+  display: inline-block;
+  padding: 3rem;
+}
+
+.articleTitle {
+  font-size: 5em;
+}
+
+.articleSection {
+  border-bottom: 5px double purple;
+  padding: 2rem 0;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.figureWrapper {
+  float: left;
+  width: 75%;
+}
+
+.poePhotoWrapper {
+  border: 10px outset purple;
+  /* border-radius: 10rem; */
+  float: left;
+  margin-left: 0;
+  width: 200px;
+}
+
+.poePhoto {
+  border-radius: 10rem;
+  display: block;
+}
+
+.poePhotoWrapper.photoRelative {
+  position: relative;
+}
+
+.poePhotoCaption {
+  background-color: lightyellow;
+  font-style: italic;
+  padding: 0.5rem;
+  font-weight: 700;
+}
+
+.poePhotoWrapper:hover .poePhotoCaption {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.writingSection {
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
+.writingSection + .writingSection {
+  border-top: 1px dashed purple;
+}
+
+.articleTable {
+  border-collapse: collapse;
+  border: 3px dotted #ccc;
+  font-family: monospace;
+}
+
+.articleTable caption {
+  display: none;
+}
+
+.articleTable th,
+.articleTable td {
+  border: 3px dotted #ccc;
+  padding: 2rem;
+}
+
+.articleTable th {
+  color: purple;
+}
+
+.articleTable .workTitle {
+  color: red;
+}
+
+.signupForm {
+  background: rgba(127, 14, 126, 0.1);
+  padding: 2rem;
+  position: relative;
+}
+
+.signupFormField {
+  border: 0;
+  display: inline-block;
+  padding: 0 0 2rem;
+  vertical-align: top;
+}
+
+.signupFormField > div {
+  color: orange;
+  border: 1px solid orange;
+  margin-bottom: 1rem;
+}
+.signupFormField > div:first-child {
+  color: inherit;
+  border-color: inherit;
+}
+.signupFormField > div:nth-of-type(2) {
+  color: initial;
+  border-color: initial;
+}
+.signupFormField > div:last-child {
+  color: unset;
+  border-color: unset;
+}
+
+.signupForm legend {
+  font-family: "UnifrakturMaguntia", cursive;
+}
+
+.signupFormField label {
+  display: block;
+  margin-top: 1rem;
+  font-family: "Rowdies Light", serif;
+}
+.signupFormField .age .labelWrapper {
+  display: inline-block;
+}
+
+.signupFormField .age .labelWrapper ~ .labelWrapper {
+  background: purple;
+  color: #fff;
+  margin-left: 1rem;
+}
+
+.signupFormField .age .labelWrapper:nth-of-type(1) + .labelWrapper {
+  background: #f00;
+}
+
+.signupFormField .age .labelWrapper:last-child {
+  background: #060;
+}
+
+.signupForm input[type="text"],
+.signupForm input[type="tel"],
+.signupForm select {
+  display: block;
+}
+
+.signupForm div > input[type="radio"] {
+  margin-right: 1rem;
+}
+
+.signupForm input[type="submit"] {
+  background: purple;
+  border: 0;
+  color: #fff;
+  font-size: 3rem;
+  padding: 0.5em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+}
+
+.signupForm .favoriteWork option:first-child {
+  background: purple;
+  color: #fff;
+}
+
+.pageFooter {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.pageFooter li {
+  background: magenta;
+}
+
+.pageFooter li + li {
+  margin-top: 1rem;
+  color: inherit;
+}
+
+.pageFooter ul {
+  list-style-position: inside;
+  list-style-image: url(raven.svg);
+}
+.pageFooter ol {
+  list-style-position: outside;
+}
+
+.pageFooter ol li:first-child {
+  margin-top: 100rem;
+}
+.pageFooter li:first-child {
+  margin-top: 3rem !important;
+}
+
+.legal {
+  display: block;
+  font-family: "Rowdies Regular", serif;
+}
+
+.copyright {
+  font-style: oblique;
+}
+
+.trademark {
+  font-style: italic;
+}
