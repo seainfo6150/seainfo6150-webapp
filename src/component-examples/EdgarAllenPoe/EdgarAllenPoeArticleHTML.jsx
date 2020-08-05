@@ -303,22 +303,24 @@ const EdgarAllenPoeArticle = () => {
                 cite="https://www.poetryfoundation.org/poems/48860/the-raven"
                 lang="fr"
               >
-                Une fois, par un minuit lugubre, tandis que je
-                <br />
-                m&rsquo;appesantissais, faible et fatigu&eacute;, sur maint
-                <br />
-                curieux et bizarre volume de savoir oublié&ndash;
-                <br />
-                tandis que je dodelinais la t&ecirc;te, somnolant
-                <br />
-                presque:{" "}
-                <q>
-                  soudain se fit un heurt, comme de
+                <i>
+                  Une fois, par un minuit lugubre, tandis que je
                   <br />
-                  quelqu&rsquo;un frappant doucement, frappant &agrave; la
+                  m&rsquo;appesantissais, faible et fatigu&eacute;, sur maint
                   <br />
-                  porte de ma chambre&mdash;cela seul et rien de plus.
-                </q>
+                  curieux et bizarre volume de savoir oublié&ndash;
+                  <br />
+                  tandis que je dodelinais la t&ecirc;te, somnolant
+                  <br />
+                  presque:{" "}
+                  <q>
+                    soudain se fit un heurt, comme de
+                    <br />
+                    quelqu&rsquo;un frappant doucement, frappant &agrave; la
+                    <br />
+                    porte de ma chambre&mdash;cela seul et rien de plus.
+                  </q>
+                </i>
               </blockquote>
             </section>
 
