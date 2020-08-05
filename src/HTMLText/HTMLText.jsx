@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
+import PropTypes from "prop-types";
 
 const HTMLText = (props) => {
-    return (
-        <div dangerouslySetInnerHTML={{ __html: props.text }} />
-    )
-}
+  return <div dangerouslySetInnerHTML={{ __html: props.text }} />;
+};
 
-export default HTMLText
+HTMLText.propTypes = {
+    text: PropTypes.string.isRequired
+}
+export default HTMLText;
