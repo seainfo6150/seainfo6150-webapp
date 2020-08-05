@@ -1,15 +1,21 @@
 import React from "react";
-import { Switch, Route, useRouteMatch } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import Article from "./Article/Article";
 
 function App() {
-  let { url } = useRouteMatch();
-
   return (
     <div className="App">
       <Switch>
-        <Route path={`${url}/articlelist`}></Route>
-        <Route path={`${url}/articlelist/:slug`}></Route>
+        <Route exact path={`/articlelist`}></Route>
+        <Route
+          path={`/articlelist/:slug`}
+          render={({ match }) => {
+            // getting the parameters from the url and passing
+            // down to the component as props
+            console.log("this slug", match.params.slug)
+            return <div>Component</div>
+          }}
+        />
         <Route>
           <Article />
         </Route>
