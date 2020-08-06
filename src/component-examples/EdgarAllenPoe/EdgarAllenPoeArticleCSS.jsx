@@ -31,12 +31,8 @@ const EdgarAllenPoeArticle = () => {
         <h2>
           <a href="home.html">My Website</a>
         </h2>
-        <h3 className={styles.hidden}>
-          not visible
-        </h3>
-        <h3 className={styles.noDisplay}>
-          not visible
-        </h3>
+        <h3 className={styles.hidden}>not visible</h3>
+        <h3 className={styles.noDisplay}>not visible</h3>
         <nav className={styles.mainNav}>
           <ul className={styles.mainNavLinks}>
             <li>
@@ -57,7 +53,9 @@ const EdgarAllenPoeArticle = () => {
             <h1 className={styles.articleTitle}>
               The Life and Times of Edgar Allen Poe
             </h1>
-            <time className={styles.publishDate} datetime="2019-09-15">September 15, 2019</time>
+            <time className={styles.publishDate} datetime="2019-09-15">
+              September 15, 2019
+            </time>
             <Address />
           </header>
           <section className={styles.articleSection}>
@@ -102,7 +100,10 @@ const EdgarAllenPoeArticle = () => {
             </div>
 
             <p>
-              <strong className={styles.highlighted} style={{ background: "orange" }}>
+              <strong
+                className={styles.highlighted}
+                style={{ background: "orange" }}
+              >
                 Please note: this is not meant to be an exhaustive history of
                 Poe&rsquo;s life.
               </strong>
@@ -120,8 +121,8 @@ const EdgarAllenPoeArticle = () => {
                 He is widely regarded as a central figure of Romanticism in the
                 United States and of American literature as a whole
               </span>
-              , and he was one of the country&rsquo;s earliest practitioners of the
-              short story. He is generally considered the inventor of the
+              , and he was one of the country&rsquo;s earliest practitioners of
+              the short story. He is generally considered the inventor of the
               detective fiction genre and is further credited with contributing
               to the emerging genre of science fiction.<sup>1</sup> He was the
               first well-known American writer to earn a living through writing
@@ -272,7 +273,7 @@ const EdgarAllenPoeArticle = () => {
 
             <div>
               Check out my website,
-              <a href="http://allaboutpoe.org" target="_blank">
+              <a href="http://allaboutpoe.org" target="_blank" rel="noopener">
                 allaboutpoe.org
               </a>
               !
@@ -462,8 +463,8 @@ const EdgarAllenPoeArticle = () => {
               came to be in his dire condition and, oddly, was wearing clothes
               that were not his own. He is said to have repeatedly called out
               the name "Reynolds" on the night before his death, though it is
-              unclear to whom he was referring. Some sources say that Poe&rsquo;s
-              final words were{" "}
+              unclear to whom he was referring. Some sources say that
+              Poe&rsquo;s final words were{" "}
               <q>
                 Lord help my poor <em>soul</em>
               </q>

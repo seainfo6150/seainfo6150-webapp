@@ -47,17 +47,12 @@ const EdgarAllenPoeArticle = () => {
           <section>
             <div>
               <figure>
-                <a
-                  href="https://en.wikipedia.org/wiki/Edgar_Allan_Poe#/media/File:Edgar_Allan_Poe,_circa_1849,_restored,_squared_off.jpg"
-                  title="1849 &ldquo;Annie&rdquo; daguerreotype"
-                >
-                  <img
-                    alt="1849 &ldquo;Annie&rdquo; daguerreotype"
-                    src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Edgar_Allan_Poe%2C_circa_1849%2C_restored%2C_squared_off.jpg/200px-Edgar_Allan_Poe%2C_circa_1849%2C_restored%2C_squared_off.jpg"
-                    width="200"
-                    height="281"
-                  />
-                </a>
+                <img
+                  alt="1849 &ldquo;Annie&rdquo; daguerreotype"
+                  src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Edgar_Allan_Poe%2C_circa_1849%2C_restored%2C_squared_off.jpg/200px-Edgar_Allan_Poe%2C_circa_1849%2C_restored%2C_squared_off.jpg"
+                  width="200"
+                  height="281"
+                />
                 <figcaption>1849 &ldquo;Annie&rdquo; daguerreotype</figcaption>
               </figure>
 
@@ -241,7 +236,7 @@ const EdgarAllenPoeArticle = () => {
 
             <div>
               Check out my website,
-              <a href="http://allaboutpoe.org" target="_blank">
+              <a href="http://allaboutpoe.org" target="_blank" rel="noopener">
                 allaboutpoe.org
               </a>
               !
