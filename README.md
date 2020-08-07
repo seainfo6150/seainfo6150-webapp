@@ -2,31 +2,7 @@
 Repository of assignments/labs webapp
 
 # Validator bookmarklet
-Copy this <a href="javascript: (async function () {
-  const htmlNode = document.querySelector("html").cloneNode(true);
-  const tmp = document.createElement("div");
-  tmp.appendChild(htmlNode);
-  const documentString = `<!DOCTYPE html>${tmp.innerHTML}`;
-
-  const response = await fetch(`http://localhost:3000/nu/#file`, {
-    method: "POST",
-    cache: "no-cache",
-    mode: 'cors', 
-    headers: {
-      "Content-Type": "text/html; charset=UTF-8",
-      "User-Agent": navigator.userAgent
-    },
-    referrerPolicy: "no-referrer", 
-    body: documentString,
-  });
-  const html = await response.text();
-  
-  const newWindow = window.open("about:blank", "width=200,height=200", "_blank");
-  let updatedHTML = html.replace("style.css",'https://validator.w3.org/nu/style.css');
-  updatedHTML = updatedHTML.replace(/\<form(.*)form\>/g, "");
-  newWindow.document.write(updatedHTML);
-})();
-">Validate HTML bookmarklet</a> to your bookmarks bar. When you click the bookmark while viewing a page in your web app, a window will be opened that will validate your HTML with W3C Validator (http://validator.w3.org).
+Copy this <a href="javascript%3A%20(async%20function%20()%20%7B%0A%20%20const%20htmlNode%20%3D%20document.querySelector(%22html%22).cloneNode(true)%3B%0A%20%20const%20tmp%20%3D%20document.createElement(%22div%22)%3B%0A%20%20tmp.appendChild(htmlNode)%3B%0A%20%20const%20documentString%20%3D%20%60%3C!DOCTYPE%20html%3E%24%7Btmp.innerHTML%7D%60%3B%0A%0A%20%20const%20response%20%3D%20await%20fetch(%60http%3A%2F%2Flocalhost%3A3000%2Fnu%2F%23file%60%2C%20%7B%0A%20%20%20%20method%3A%20%22POST%22%2C%0A%20%20%20%20cache%3A%20%22no-cache%22%2C%0A%20%20%20%20mode%3A%20%27cors%27%2C%20%0A%20%20%20%20headers%3A%20%7B%0A%20%20%20%20%20%20%22Content-Type%22%3A%20%22text%2Fhtml%3B%20charset%3DUTF-8%22%2C%0A%20%20%20%20%20%20%22User-Agent%22%3A%20navigator.userAgent%0A%20%20%20%20%7D%2C%0A%20%20%20%20referrerPolicy%3A%20%22no-referrer%22%2C%20%0A%20%20%20%20body%3A%20documentString%2C%0A%20%20%7D)%3B%0A%20%20const%20html%20%3D%20await%20response.text()%3B%0A%20%20%0A%20%20const%20newWindow%20%3D%20window.open(%22about%3Ablank%22%2C%20%22width%3D200%2Cheight%3D200%22%2C%20%22_blank%22)%3B%0A%20%20let%20updatedHTML%20%3D%20html.replace(%22style.css%22%2C%27https%3A%2F%2Fvalidator.w3.org%2Fnu%2Fstyle.css%27)%3B%0A%20%20updatedHTML%20%3D%20updatedHTML.replace(%2F%5C%3Cform(.*)form%5C%3E%2Fg%2C%20%22%22)%3B%0A%20%20newWindow.document.write(updatedHTML)%3B%0A%7D)()%3B%0A">Validate HTML bookmarklet</a> to your bookmarks bar. When you click the bookmark while viewing a page in your web app, a window will be opened that will validate your HTML with W3C Validator (http://validator.w3.org).
 
 
 # Github guide
