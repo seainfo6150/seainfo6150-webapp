@@ -2,6 +2,7 @@
   "name": "seainfo6150-webapp",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://validator.w3.org/",
   "dependencies": {
     "classnames": "2.2.6",
     "react": "^16.13.1",
