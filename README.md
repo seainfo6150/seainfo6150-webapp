@@ -9,30 +9,7 @@ Make a new bookmark in your browser (right-click on the [bookmarks bar](https://
   - Copy the code block below, paste this into the "Location" of a new bookmark.
 
 ```
-javascript: (async function () {
-  const htmlNode = document.querySelector("html").cloneNode(true);
-  const tmp = document.createElement("div");
-  tmp.appendChild(htmlNode);
-  const documentString = `<!DOCTYPE html>${tmp.innerHTML}`;
-
-  const response = await fetch(`http://localhost:3000/nu/#file`, {
-    method: "POST",
-    cache: "no-cache",
-    mode: 'cors', 
-    headers: {
-      "Content-Type": "text/html; charset=UTF-8",
-      "User-Agent": navigator.userAgent
-    },
-    referrerPolicy: "no-referrer", 
-    body: documentString,
-  });
-  const html = await response.text();
-  
-  const newWindow = window.open("about:blank", "width=200,height=200", "_blank");
-  let updatedHTML = html.replace("style.css",'https://validator.w3.org/nu/style.css');
-  updatedHTML = updatedHTML.replace(/\<form(.*)form\>/g, "");
-  newWindow.document.write(updatedHTML);
-})();
+javascript:void%20function(){javascript:(async%20function(){const%20a=document.querySelector(%22html%22).cloneNode(!0),b=document.createElement(%22div%22);b.appendChild(a);const%20c=`%3C!DOCTYPE%20html%3E${b.innerHTML}`.replace(/style%20type=\%22text\/css\%22/g,%22style%22),d=await%20fetch(`http://localhost:3000/nu/%23text-area`,{method:%22POST%22,cache:%22no-cache%22,mode:%22cors%22,headers:{%22Content-Type%22:%22text/html;%20charset=UTF-8%22,%22User-Agent%22:navigator.userAgent},referrerPolicy:%22no-referrer%22,body:c}),e=await%20d.text(),f=window.open(%22about:blank%22,%22%22,%22width=700,height=500%22);let%20g=e.replace(%22style.css%22,%22https://validator.w3.org/nu/style.css%22);g=g.replace(/\%3Cform(.*)form\%3E/g,%22%22),f.document.write(g)})()}();
 ```
 
 When you click the bookmark while viewing a page in your web app, a window will be opened that will validate your HTML with W3C Validator (http://validator.w3.org).
