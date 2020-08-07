@@ -9,7 +9,6 @@ Make a new bookmark in your browser (right-click on the [bookmarks bar](https://
   - Copy the code block below, paste this into the "Location" of a new bookmark.
 
 ```
-```
 javascript: (async function () {
   const htmlNode = document.querySelector("html").cloneNode(true);
   const tmp = document.createElement("div");
@@ -34,7 +33,7 @@ javascript: (async function () {
   updatedHTML = updatedHTML.replace(/\<form(.*)form\>/g, "");
   newWindow.document.write(updatedHTML);
 })();
-``````
+```
 
 When you click the bookmark while viewing a page in your web app, a window will be opened that will validate your HTML with W3C Validator (http://validator.w3.org).
 
