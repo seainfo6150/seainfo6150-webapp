@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
-import JsFundamentals from "./component-examples/JsFundamentals/JsFundamentals.js";
-import HelloUser from "./component-examples/HelloUser/HelloUser.js";
-import HelloUserClass from "./component-examples/HelloUser/HelloUserClass.js";
-import AddingMachine from "./component-examples/AddingMachine/AddingMachine.js";
-import AddingMachineHooks from "./component-examples/AddingMachine/AddingMachineHooks.js";
-import List from "./component-examples/List.js";
+import JsFundamentals from "./component-examples/JsFundamentals/JsFundamentals.jsx";
+import HelloUser from "./component-examples/HelloUser/HelloUser.jsx";
+import HelloUserClass from "./component-examples/HelloUser/HelloUserClass.jsx";
+import AddingMachine from "./component-examples/AddingMachine/AddingMachine.jsx";
+import AddingMachineHooks from "./component-examples/AddingMachine/AddingMachineHooks.jsx";
+import List from "./component-examples/List.jsx";
 import CSSModule from "./component-examples/CSSModule/CSSModule.jsx";
 import CSSModule2 from "./component-examples/CSSModule2/CSSModule2.jsx";
 import Edgar from "./component-examples/EdgarAllenPoe/EdgarAllenPoeArticle.jsx";
