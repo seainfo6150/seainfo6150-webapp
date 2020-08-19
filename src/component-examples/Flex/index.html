@@ -1,0 +1,195 @@
+<html>
+<head>
+    <title>Flexplorer</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <meta name="description" content="Dive in to and explore the wonders of the CSS3 Flexible Box model." />
+</head>
+<body>
+
+<section class="flex">
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidebar flex">
+        <hgroup class="hgroup flex">
+            <a href="http://bennettfeely.com/flexplorer">flexplorer</a>
+            <span class="toggle-controls" id="toggle-controls">&lsaquo;</span>
+        </hgroup>
+        <menu class="controls flex">
+            <div>
+                <code>container:
+                    <span class="tip" data-tip="height"><input id="container-height-control" class="mid" value="auto" /></span>
+                    <span class="tip" data-tip="width"><input id="container-width-control" class="mid" value="auto" /></span>
+                </code>
+            </div>            
+            <div>
+                <code>flex:
+                    <span class="tip" data-tip="flex-grow"><input id="flex-grow-control" class="small" value="1" /></span>
+                    <span class="tip" data-tip="flex-shrink"><input id="flex-shrink-control" class="small" value="0" /></span>
+                    <span class="tip flex-basis-tip" data-tip="flex-basis (try 300px or 20%)"><input id="flex-basis-control" class="mid" value="auto" /></span>
+                </code>
+            </div>
+            <div>
+                <code>item <span id="selected-index"></span>:
+                    <span class="tip" data-tip="flex-grow"><input id="item-flex-grow-control" class="selected-item-field small" value="" data-prop="grow" /></span>
+                    <span class="tip" data-tip="flex-shrink"><input id="item-flex-shrink-control" class="selected-item-field small" value="" data-prop="shrink" /></span>
+                    <span class="tip flex-basis-tip" data-tip="flex-basis (try 300px or 20%)"><input id="item-flex-basis-control" class="selected-item-field mid" value="" data-prop="basis" /></span>
+                </code>
+                <code class="tip large-tip-bottom" data-tip="order of items is 0 by default">
+                order:
+                    <input id="item-order-control" class="selected-item-field small" value="" data-prop="order" />
+                </code>
+                <code class="tip large-tip-bottom" data-tip="Equivalent of align-items per item" >
+                align-self:
+                    <select id="item-align-self-control" class="selected-item-field" data-prop="align">
+                      <option value="">auto</option>
+                      <option value="flex-start">flex-start</option>
+                      <option value="flex-end">flex-end</option>
+                      <option value="center">center</option>
+                      <option value="baseline">baseline</option>
+                      <option value="stretch">stretch</option>
+                    </select>
+                </code>
+            </div>
+            <div>
+                <code># of flex items:
+                    <input id="count" class="small" maxlength="3">
+                    <span id="count-increase" class="count-control small">+</span>
+                    <span id="count-decrease" class="count-control small">-</span>
+                </code>
+            </div>
+            <div>
+                <code>flex-direction:
+                    <select id="flex-direction-control">
+                      <option value="row">row</option>
+                      <option value="row-reverse">row-reverse</option>
+                      <option value="column">column</option>
+                      <option value="column-reverse">column-reverse</option>
+                    </select>
+                </code>
+            </div>
+            <div>
+                <code>flex-wrap:
+                    <select id="flex-wrap-control">
+                      <option value="wrap">wrap</option>
+                      <option value="wrap-reverse">wrap-reverse</option>
+                      <option value="nowrap">nowrap</option>
+                    </select>
+                </code>
+            </div>
+            <div>
+                <code class="tip large-tip" data-tip="To see a change, set 'flex' property to something like 'flex: 0 1 auto'">justify-content:
+                    <select id="justify-content-control">
+                      <option value="flex-start">flex-start</option>
+                      <option value="flex-end">flex-end</option>
+                      <option value="center">center</option>
+                      <option value="baseline">baseline</option>
+                      <option value="space-around">space-around</option>
+                      <option value="space-between">space-between</option>
+                      <option value="space-evenly">space-evenly</option>
+                      <option value="stretch">stretch</option>
+                    </select>
+                </code>
+            </div>
+            <div>
+                <code class="">align-items:
+                    <select id="align-items-control">
+                      <option value="stretch">stretch</option>
+                      <option value="flex-start">flex-start</option>
+                      <option value="flex-end">flex-end</option>
+                      <option value="center">center</option>
+                      <option value="baseline">baseline</option>
+                    </select>
+                </code>
+            </div>
+            <div>
+                <code class="tip large-tip" data-tip="Only works when wrapping on several lines">align-content:
+                    <select id="align-content-control">
+                      <option value="stretch">stretch</option>
+                      <option value="space-between">space-between</option>
+                      <option value="space-around">space-around</option>
+                      <option value="flex-start">flex-start</option>
+                      <option value="flex-end">flex-end</option>
+                      <option value="center">center</option>
+                    </select>
+                </code>
+            </div>
+        </menu>
+    </aside>
+
+    <!-- Fail message -->
+    <div class="your-browser-sucks">
+        Well this is embarrassing...
+        <br>You're currently on a web browser that does not support the most recent version of the <a href="http://www.w3.org/TR/css3-flexbox/">CSS Flexible Box Model</a>.
+        <br>Upgrade your browser and have a nice day!
+
+        <label>Supports latest version of Flexbox <em>unprefixed</em>:</label>
+        <h1><a href="http://www.apple.com/safari/">Safari 7+</a></h1>
+        <h1><a href="http://ie.microsoft.com/testdrive/info/downloads/default.html">Internet Explorer 11</a></h1>
+        <h1><a href="https://www.google.com/intl/en/chrome/browser/">Chrome 29+</a></h1>
+        <h1><a href="http://www.opera.com/download/">Opera 12.1</a></h1>
+
+        <label>Supports latest version of Flexbox prefixed:</label>
+        <h2><a href="http://www.apple.com/safari/">Safari 6.1+ <small>prefixed</small></a></h2>
+        <h1><a href="https://www.google.com/intl/en/chrome/browser/">Chrome 21+</a></h1>
+
+        <label>Support for latest vesion of Flexbox coming soon!</label>
+        <h1><a class="no-support" href="http://www.mozilla.org/en-US/firefox/new/">Firefox 23+</a></h1>
+
+        <br>View full table of support for Flexbox on <a href="http://caniuse.com/#search=flexbox">Can I use...</a></label>
+    </div>
+
+    <!-- .demo -->
+    <div id="container">
+        <figure id="demo" class="flex-container demo">
+            <div id="item-1" class="flex-item"><span contenteditable="true">Lorem ipsum</span></div>
+            <div id="item-2" class="flex-item"><span contenteditable="true">dolor</span></div>
+            <div id="item-3" class="flex-item"><span contenteditable="true">sit</span></div>
+            <div id="item-4" class="flex-item"><span contenteditable="true">amet</span></div>
+            <div id="item-5" class="flex-item"><span contenteditable="true">consectetur</span></div>
+            <div id="item-6" class="flex-item"><span contenteditable="true">adipiscing elit</span></div>
+            <div id="item-7" class="flex-item"><span contenteditable="true">nunc</span></div>
+            <div id="item-8" class="flex-item"><span contenteditable="true">enim</span></div>
+            <div id="item-9" class="flex-item"><span contenteditable="true">nunc</span></div>
+            <div id="item-10" class="flex-item"><span contenteditable="true">volutpat eget</span></div>
+            <div id="item-11" class="flex-item"><span contenteditable="true">aliquam</span></div>
+            <div id="item-12" class="flex-item"><span contenteditable="true">nec</span></div>
+            <div id="item-13" class="flex-item"><span contenteditable="true">accumsan rutrum</span></div>
+            <div id="item-14" class="flex-item"><span contenteditable="true">bacon</span></div>
+            <div id="item-15" class="flex-item"><span contenteditable="true">maecenas</span></div>
+            <div id="item-16" class="flex-item"><span contenteditable="true">nunc</span></div>
+            <div id="item-17" class="flex-item"><span contenteditable="true">voldermere</span></div>
+            <div id="item-18" class="flex-item"><span contenteditable="true">it</span></div>
+            <div id="item-19" class="flex-item"><span contenteditable="true">las</span></div>
+            <div id="item-20" class="flex-item"><span contenteditable="true">quid</span></div>
+            <div id="item-21" class="flex-item"><span contenteditable="true">tostidos</span></div>
+            <div id="item-22" class="flex-item"><span contenteditable="true">gray</span></div>
+        </figure>
+    </div>
+
+</section>
+
+<!-- Results-->
+<section class="results flex">
+
+<style data-noprefix class="demo-styles" id="demo_styles" contenteditable="true">.flex-container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.flex-item {
+    -webkit-flex: 1 auto;
+    -moz-flex: 1 auto;
+    flex: 1 auto;
+}</style>
+</section>
+
+
+<script src="js/flexplorer.js"></script>
+<a style="display:none" href="https://plus.google.com/102233754358513450834?rel=author">Google</a>
+</body>
+</html>

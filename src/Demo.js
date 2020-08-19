@@ -9,6 +9,7 @@ import List from "./component-examples/List.js";
 import CSSModule from "./component-examples/CSSModule/CSSModule.jsx";
 import CSSModule2 from "./component-examples/CSSModule2/CSSModule2.jsx";
 import Edgar from "./component-examples/EdgarAllenPoe/EdgarAllenPoeArticle.jsx";
+import Grid from "./component-examples/Grid/Grid.jsx";
 import styles from "./component-examples/examples.module.css";
 
 const Demo = (props) => {
@@ -63,6 +64,9 @@ const Demo = (props) => {
             <li className={styles.listItem}>
               <Link to={`${url}/edgar`}>Edgar Allen Poe HTML</Link>
             </li>
+            <li className={styles.listItem}>
+              <Link to={`${url}/grid`}>Grid</Link>
+            </li>
           </ul>
         </nav>
       </header>
@@ -98,6 +102,9 @@ const Demo = (props) => {
         </Route>
         <Route path={`${url}/edgar`} exact>
           <Edgar />
+        </Route>
+        <Route path={`${url}/grid`} exact>
+          <Grid />
         </Route>
         <Route path={`${url}/baz`} exact>
           <div>Hello</div>

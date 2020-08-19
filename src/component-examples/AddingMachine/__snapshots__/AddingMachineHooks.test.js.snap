@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddingMachineHooks tests renders correctly 1`] = `
+<div>
+  <div
+    style="border: 1px solid black; margin: 2rem;"
+  >
+    <header />
+    <div>
+      We started with 
+      0
+    </div>
+    <div>
+      We're now at 
+      0
+    </div>
+    <button>
+      Click me to add 1
+    </button>
+    <div>
+      Whee!
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AddingMachineHooks tests renders correctly after button is clicked 1`] = `
+<div>
+  <div
+    style="border: 1px solid black; margin: 2rem;"
+  >
+    <header />
+    <div>
+      We started with 
+      0
+    </div>
+    <div>
+      We're now at 
+      1
+    </div>
+    <button>
+      Click me to add 1
+    </button>
+  </div>
+</div>
+`;
+
+exports[`AddingMachineHooks tests renders correctly when currentNum is 10 1`] = `
+<div>
+  <div
+    style="border: 1px solid black; margin: 2rem;"
+  >
+    <header />
+    <div>
+      We started with 
+      10
+    </div>
+    <div>
+      We're now at 
+      10
+    </div>
+    <button>
+      Click me to add 1
+    </button>
+    <div>
+      Whee!
+    </div>
+  </div>
+</div>
+`;
