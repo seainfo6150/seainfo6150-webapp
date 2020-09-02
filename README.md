@@ -21,11 +21,15 @@ We will use github repos throughout the course. If you are not familiar with git
 
 # View the demo components
 Visit the following URLs with the webapp running to view the various demos: 
-* http://localhost:3000/?demo=concepts 
-* http://localhost:3000/?demo=hello 
-* http://localhost:3000/?demo=hello-user-class
-* http://localhost:3000/?demo=adding
-* http://localhost:3000/?demo=cssmodules
+* http://localhost:3000/demo/concepts 
+* http://localhost:3000/demo/hello-user
+* http://localhost:3000/demo/hello-user-class
+* http://localhost:3000/demo/adding
+* http://localhost:3000/demo/adding-hooks
+* http://localhost:3000/demo/list
+* http://localhost:3000/demo/cssmodules
+* http://localhost:3000/demo/edgar
+* http://localhost:3000/demo/grid
 
 
 # Forking class repo and setting upstream remote
