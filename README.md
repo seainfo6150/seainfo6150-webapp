@@ -36,7 +36,7 @@ Visit the following URLs with the webapp running to view the various demos:
 1. Make sure you have git installed: https://git-scm.com/downloads
 2. Go to the git repo for this class: https://github.com/aprilbingham-neu/seainfo6150-webapp
 3. Click “Fork” to create your copy of the repo
-4. Click “Clone or download” to get a link to copy your fork on your computer
+4. Click the “Code” to get a link to copy your fork on your computer
 5. Click “Use HTTPS”
 6. Copy link
 7. Open command line/terminal window and use these commands in a directory where you have admin permissions
