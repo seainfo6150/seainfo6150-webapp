@@ -46,6 +46,12 @@ cd seainfo6150-webapp
 git remote add upstream https://github.com/aprilbingham-neu/seainfo6150-webapp
 ```
 
+# Looking at a list of all your branches
+```
+cd seainfo6150-webapp
+git branch
+```
+
 # Creating a branch from master
 ```
 cd seainfo6150-webapp
