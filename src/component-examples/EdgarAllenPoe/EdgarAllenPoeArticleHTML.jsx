@@ -134,7 +134,7 @@ const EdgarAllenPoeArticle = () => {
               <fieldset>
                 <legend>Personal Information</legend>
                 <div>
-                  <label for="full-name">
+                  <label htmlFor="full-name">
                     Full name:
                     <input
                       type="text"
@@ -145,7 +145,7 @@ const EdgarAllenPoeArticle = () => {
                   </label>
                 </div>
                 <div>
-                  <label for="email">
+                  <label htmlFor="email">
                     Email:
                     <input
                       type="text"
@@ -156,7 +156,7 @@ const EdgarAllenPoeArticle = () => {
                   </label>
                 </div>
                 <div>
-                  <label for="telephone">
+                  <label htmlFor="telephone">
                     Telephone:
                     <input
                       type="tel"
@@ -171,23 +171,23 @@ const EdgarAllenPoeArticle = () => {
                   <header>Age</header>
                   <div>
                     <input type="radio" id="age1" name="age" value="0-21" />
-                    <label for="age1">0-21</label>
+                    <label htmlFor="age1">0-21</label>
                   </div>
                   <div>
                     <input type="radio" id="age2" name="age" value="22-41" />
-                    <label for="age2">22-41</label>
+                    <label htmlFor="age2">22-41</label>
                   </div>
                   <div>
                     <input type="radio" id="age3" name="age" value="42-61" />
-                    <label for="age3">42-61</label>
+                    <label htmlFor="age3">42-61</label>
                   </div>
                   <div>
                     <input type="radio" id="age4" name="age" value="61+" />
-                    <label for="age4">61+</label>
+                    <label htmlFor="age4">61+</label>
                   </div>
                 </div>
                 <div>
-                  <label for="education">
+                  <label htmlFor="education">
                     Highest Education Level:
                     <select id="education">
                       <option value="High school">High school</option>
@@ -202,9 +202,9 @@ const EdgarAllenPoeArticle = () => {
               <fieldset>
                 <legend>Interests</legend>
                 <div>
-                  <label for="favorite-work">
+                  <label htmlFor="favorite-work">
                     Favorite Poe Work:
-                    <select name="favorite-work" multiple="multiple">
+                    <select id="favorite-work" name="favorite-work" multiple="multiple">
                       <optgroup label="Poems">
                         <option value="The Raven">
                           &ldquo;The Raven&rdquo;

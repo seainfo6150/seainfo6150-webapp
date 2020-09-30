@@ -235,10 +235,11 @@ const EdgarAllenPoeArticle = () => {
               <fieldset className={styles.signupFormField}>
                 <legend>Interests</legend>
                 <div>
-                  <label for="favorite-work">
+                  <label htmlFor="favorite-work">
                     Favorite Poe Work:
                     <select
                       className={styles.favoriteWork}
+                      id="favorite-work"
                       name="favorite-work"
                       multiple="multiple"
                     >

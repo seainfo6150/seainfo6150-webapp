@@ -44,7 +44,7 @@
 .sidebar,
 .demo {
   opacity: 0;
-  transition: opacity 0 0.5s;
+  transition: opacity 0.5s;
   height: 100%;
 }
 .sidebar,
@@ -176,7 +176,6 @@ input:focus {
   font-weight: bold;
 }
 .count-control:active {
-  transition: 0;
   background: #ffb;
 }
 
