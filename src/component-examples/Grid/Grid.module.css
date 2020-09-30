@@ -73,12 +73,18 @@
   display: grid;
 }
 .gridItem {
-  background: #ddd;
   border-radius: 0.25rem;
+  margin:.25rem;
+  font-size:1.5em;
+  padding:1rem 1.5rem;
 }
 .gridItem.selected {
   box-shadow: inset 0px 0px 7rem #777;
 }
+
+.gridItem:focus { outline:0; color:rgba(0,0,0,.4); animation:shake .25s infinite; }
+@keyframes shake { 25%{ transform:rotate(-1deg); } 50%{ transform:translateY(-1px); } 75%{ transform:rotate(2deg); } }
+
 
 
 /* Controls (menu.controls) ================================================= */
@@ -96,6 +102,20 @@
   padding: 1rem;
   border-top: 1px solid #e1e1e1;
   border-right: 1px solid #e1e1e1;
+}
+
+.inputContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+}
+
+.inputContainer input {
+   width: 50%;
+}
+
+.inputContainer input + input {
+  margin-top: 1rem;
 }
 
 .controls:hover .indiv-controls {
