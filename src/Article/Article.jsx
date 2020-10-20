@@ -46,16 +46,16 @@ const Article = () => {
       </p>
 
       <p>
-        Her full name is <b>Liberty Enlightening the World</b>, and she was
-        designed by Frederic Auguste Bartholdi and built by Gustave Eiffel --
-        yes, the same guy who built Paris&rsquo;s Eiffel Tower.
+        Her full name is <b>Liberty Enlightening the World</b>, and she was designed by
+        Frederic Auguste Bartholdi and built by Gustave Eiffel -- yes, the same
+        guy who built Paris&rsquo;s Eiffel Tower.
       </p>
 
       <p>
         Lady Liberty was a gift from France to the United States to celebrate
-        the centennial of their nation&rsquo;s independence -- although,
-        somewhat awkwardly, she arrived a decade too late. Nevertheless,
-        President Grover Cleveland formally unveiled her in 1886.
+        the centennial of their nation&rsquo;s independence -- although, somewhat
+        awkwardly, she arrived a decade too late. Nevertheless, President Grover
+        Cleveland formally unveiled her in 1886.
       </p>
 
       <p>
@@ -82,8 +82,8 @@ const Article = () => {
 
       <p>
         When completed, the Statue of Liberty Museum will be 26,000 square feet
-        of history, inspiration and deeper analysis of the statue&rsquo;s
-        symbolism both in the US and around the world.
+        of history, inspiration and deeper analysis of the statue&rsquo;s symbolism
+        both in the US and around the world.
       </p>
 
       <p>
@@ -107,8 +107,7 @@ const Article = () => {
           The Statue has a <b>35-foot</b> waistline
         </li>
         <li>
-          Total weight of the Statue of Liberty is{" "}
-          <b>225 tons (or 450,000 pounds)</b>
+          Total weight of the Statue of Liberty is <b>225 tons (or 450,000 pounds)</b>
         </li>
       </ul>
     </article>
