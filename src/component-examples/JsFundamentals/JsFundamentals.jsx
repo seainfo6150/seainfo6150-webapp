@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Route, Switch, Link, useRouteMatch } from "react-router-dom";
 
 import styles from "../examples.module.css";
