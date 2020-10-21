@@ -141,6 +141,7 @@ const EdgarAllenPoeArticle = () => {
                       id="full-name"
                       name="full-name"
                       value="Jane Q. Public"
+                      onChange={()=>{}}
                     />
                   </label>
                 </div>
@@ -167,7 +168,7 @@ const EdgarAllenPoeArticle = () => {
                     <small>format: 123-456-7890</small>
                   </label>
                 </div>
-                <div class="age">
+                <div className="age">
                   <header>Age</header>
                   <div>
                     <input type="radio" id="age1" name="age" value="0-21" />
