@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ArticleListItem from "../ArticleListItem/ArticleListItem";
-
+import styles from "./ArticleList.module.css";
 const ArticleList = () => {
   const [articles, setArticles] = useState();
 
@@ -18,7 +18,11 @@ const ArticleList = () => {
     }
   }, [articles]);
 
-  return <ArticleListItem articles={articles}></ArticleListItem>;
+  return (
+    <div className={styles.content}>
+      <ArticleListItem articles={articles}></ArticleListItem>
+    </div>
+  );
 };
 
 export default ArticleList;

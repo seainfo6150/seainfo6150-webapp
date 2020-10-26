@@ -1,0 +1,16 @@
+.date {
+  font-weight: bold;
+}
+
+h1 {
+  color: rgb(197, 10, 10);
+}
+
+.content {
+  padding-left: 10px;
+  margin-bottom: 30px;
+  border: 2px solid;
+  border-radius: 25px;
+  box-shadow: 0 0 40px #000;
+  border-color: rgb(197, 10, 10);
+}
