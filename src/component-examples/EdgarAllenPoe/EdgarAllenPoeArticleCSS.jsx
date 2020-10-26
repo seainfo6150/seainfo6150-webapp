@@ -274,7 +274,7 @@ const EdgarAllenPoeArticle = () => {
 
             <div>
               Check out my website,
-              <a href="http://allaboutpoe.org" target="_blank" rel="noopener">
+              <a href="http://allaboutpoe.org" target="_blank" rel="noopener noreferrer">
                 allaboutpoe.org
               </a>
               !
