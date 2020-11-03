@@ -7,8 +7,15 @@
     padding: 10px;
 }
 
-.container + .container {
-    margin-top: 30px;
+.article {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.wrapper {
+    flex: 1;
 }
 
 .title {
