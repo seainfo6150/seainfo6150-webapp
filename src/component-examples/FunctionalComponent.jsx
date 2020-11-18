@@ -6,6 +6,6 @@ const FunctionalComponent = ({ name = "World" }) => {
 };
 
 FunctionalComponent.propTypes = {
-  name: PropTypes.string.isRequired
+  name: PropTypes.string
 };
 export default FunctionalComponent;

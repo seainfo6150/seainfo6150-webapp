@@ -4,9 +4,29 @@
   border-radius: 10px;
   box-shadow: 0px 0px 10px 5px rgba(204, 0, 0, 0.5);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 20px;
   font-family: Arial, Helvetica, sans-serif;
   list-style-type: none;
   padding: 15px;
 }
+
+@media screen and (min-width: 525px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
