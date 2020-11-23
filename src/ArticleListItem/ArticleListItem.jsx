@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styles from "./ArticleListItem.module.css";
 import ArticleTextToggleButton from "../ArticleTextToggleButton/ArticleTextToggleButton.jsx";
+import ArticleImage from "../ArticleImage/ArticleImage.jsx";
 
 const ArticleListItem = (props) => {
   const [isTextShowing, setIsTextShowing] = useState(false);
@@ -13,6 +14,7 @@ const ArticleListItem = (props) => {
   return (
     <li className={styles.container}>
       <article className={styles.article}>
+        <ArticleImage title = {props.article.title} url = {props.article.imgage._url} /> 
         <div className={styles.wrapper}>
           <h2 className={styles.title}>{props.article.title}</h2>
           {isTextShowing && (
