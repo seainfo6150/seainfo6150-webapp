@@ -8,6 +8,7 @@ function App() {
       <Switch>
         <Route exact path={`/articlelist`}></Route>
         <Route
+          exact
           path={`/articlelist/:slug`}
           render={({ match }) => {
             // getting the parameters from the url and passing
