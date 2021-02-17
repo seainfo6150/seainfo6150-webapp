@@ -19,19 +19,6 @@ When you click the bookmark while viewing a page in your web app, a window will 
 We will use github repos throughout the course. If you are not familiar with git, or could use a refresher on how to use git, this is an excellent starter guide: https://guides.github.com/activities/hello-world/
 
 
-# View the demo components
-Visit the following URLs with the webapp running to view the various demos: 
-* http://localhost:3000/demo/concepts 
-* http://localhost:3000/demo/hello-user
-* http://localhost:3000/demo/hello-user-class
-* http://localhost:3000/demo/adding
-* http://localhost:3000/demo/adding-hooks
-* http://localhost:3000/demo/list
-* http://localhost:3000/demo/cssmodules
-* http://localhost:3000/demo/edgar
-* http://localhost:3000/demo/grid
-
-
 # Forking class repo and setting upstream remote
 1. Make sure you have git installed: https://git-scm.com/downloads
 2. Go to the git repo for this class: https://github.com/aprilbingham-neu/seainfo6150-webapp
