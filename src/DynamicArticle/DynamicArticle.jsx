@@ -2,10 +2,17 @@ import React from 'react';
 import HTMLText from '../HTMLText/HTMLText';
 
 const DynamicArticle = (props) => {
-  const { title, author, authorEmail, displayDate, text } = props.article;
+  console.log(props.article);
+  const {
+    title,
+    author,
+    authorEmail,
+    displayDate,
+    timeStamp,
+    text,
+  } = props.article;
   return (
     <article>
-      {/* add extra html with javascript attributes here */}
       <header>
         <h1>{title}</h1>
         <address>
@@ -13,7 +20,7 @@ const DynamicArticle = (props) => {
           )
           <br />
         </address>
-        <time dateTime={displayDate}>{displayDate}</time>
+        <time dateTime={timeStamp}>{displayDate}</time>
       </header>
       <HTMLText text={text} />
     </article>

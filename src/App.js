@@ -9,7 +9,6 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       let responseJson;
-      // put data fetching code here!
       const data = await fetch('http://demo1390455.mockable.io/articles');
       responseJson = await data.json();
       setFetchedData(responseJson);
