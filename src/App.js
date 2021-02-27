@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { Switch, Route } from "react-router-dom";
-import DynamicArticle from "./DynamicArticle/DynamicArticle.jsx";
-import { isEmpty } from "lodash";
+import React, { useEffect, useState } from 'react';
+import { Switch, Route } from 'react-router-dom';
+import DynamicArticle from './DynamicArticle/DynamicArticle.jsx';
+import { isEmpty } from 'lodash';
 
 function App() {
   const [fetchedData, setFetchedData] = useState();
@@ -10,6 +10,8 @@ function App() {
     const fetchData = async () => {
       let responseJson;
       // put data fetching code here!
+      const data = await fetch('http://demo1390455.mockable.io/articles');
+      responseJson = await data.json();
       setFetchedData(responseJson);
     };
 
@@ -27,7 +29,7 @@ function App() {
           render={({ match }) => {
             // getting the parameters from the url and passing
             // down to the component as props
-            console.log("this slug", match.params.slug);
+            console.log('this slug', match.params.slug);
             return <div>Component</div>;
           }}
         />
