@@ -1,8 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import HTMLText from '../HTMLText/HTMLText';
 
 const DynamicArticle = (props) => {
-  console.log(props.article);
   const {
     title,
     author,
@@ -13,6 +13,7 @@ const DynamicArticle = (props) => {
   } = props.article;
   return (
     <article>
+      <Link to={'/articlelist'}> Back </Link>
       <header>
         <h1>{title}</h1>
         <address>
