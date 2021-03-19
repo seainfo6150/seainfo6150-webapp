@@ -1,0 +1,7 @@
+.articleListContainer {
+    background-color: grey;
+    padding: 10px;
+}
+.articleList {
+    list-style: none;
+}

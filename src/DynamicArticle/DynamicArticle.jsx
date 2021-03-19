@@ -1,6 +1,7 @@
 import React from "react";
 import HTMLText from "../HTMLText/HTMLText";
 import { Link } from "react-router-dom";
+import style from "./DynamicArticle.module.css";
 
 const DynamicArticle = (props) => {
   const { article = {} }= props;
@@ -22,22 +23,24 @@ const DynamicArticle = (props) => {
   return (
     <div className="DrnamicArticleWrapper">
       <div>
-        <Link to="/articleList">BACK</Link>
+        <Link to="/articleList" className={style.backBtn}>BACK</Link>
       </div>
-      <article>
-        <header>
-          <h1>{ title }</h1>
-          <address>
-            By { author }&nbsp;
-            <a href={`mailto:${ authorEmail }`}>
-              { authorEmail }
-            </a>
-            <br/>
-          </address>
-          <time dateTime={ timeStamp }>{ displayDate }</time>
-        </header>
-        <HTMLText text={ text } />
-      </article>
+      <div className={style.articleWrapper}> 
+        <article >
+          <header>
+            <h1>{ title }</h1>
+            <address>
+              By { author }&nbsp;
+              <a href={`mailto:${ authorEmail }`}>
+                { authorEmail }
+              </a>
+              <br/>
+            </address>
+            <time dateTime={ timeStamp }>{ displayDate }</time>
+          </header>
+          <HTMLText text={ text } />
+        </article>
+      </div>
     </div>
 
 

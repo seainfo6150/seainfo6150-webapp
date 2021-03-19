@@ -1,0 +1,15 @@
+.ArticleItemWrapper {
+    background-color: white;
+    border-radius: 10px;
+    padding: 0px 0 10px 10px;
+    margin-top: 20px;
+    background: linear-gradient(to right, RGB(176,23,31,0.5) 0px, white 20%)
+}
+
+.Title {
+    color: red;
+}
+
+.Date {
+    font-weight: bold;
+}

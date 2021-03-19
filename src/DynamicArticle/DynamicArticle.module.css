@@ -1,0 +1,12 @@
+.articleWrapper {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px dashed red;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px RGB(176,23,31,0.5);
+}
+.backBtn {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}

@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import DynamicArticle from "./DynamicArticle/DynamicArticle.jsx";
-import ArticleList from "./Article/ArticleList.jsx";
-import ArticleListItem from "./ArticleListItem/ArticleListItem"; 
+import ArticleList from "./Article/ArticleList/ArticleList.jsx";
 import { isEmpty } from "lodash";
 
 function App() {
