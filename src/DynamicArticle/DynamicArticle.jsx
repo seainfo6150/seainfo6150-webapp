@@ -2,6 +2,7 @@ import React from "react";
 import HTMLText from "../HTMLText/HTMLText";
 import { Link } from "react-router-dom";
 import style from "./DynamicArticle.module.css";
+import ArticleImage from "../ArticleImage/ArticleImage";
 
 const DynamicArticle = (props) => {
   const { article = {} }= props;
@@ -17,9 +18,10 @@ const DynamicArticle = (props) => {
           authorEmail,
           timeStamp,
           displayDate,
-          text
+          text,
+          image 
         } = article;
-      
+  const url = image ? image._url : null;
   return (
     <div className="DrnamicArticleWrapper">
       <div>
@@ -27,6 +29,7 @@ const DynamicArticle = (props) => {
       </div>
       <div className={style.articleWrapper}> 
         <article >
+          <ArticleImage url={url} title={title}></ArticleImage>
           <header>
             <h1>{ title }</h1>
             <address>

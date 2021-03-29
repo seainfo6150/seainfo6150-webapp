@@ -1,0 +1,6 @@
+.articleImage {
+    border-radius: 50%;
+    border: 6px red solid;
+    height: 60px;
+    margin-top: 10px;
+}

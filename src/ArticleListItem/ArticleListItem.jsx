@@ -1,7 +1,8 @@
 import React,  { useState }  from "react";
 import { Link } from "react-router-dom";
 import ArticleTextToggleButton from "../ArticleTextToggleButton/ArticleTextToggleButton";
-import style from "./ArticleListItem.module.css"
+import style from "./ArticleListItem.module.css";
+import ArticleImage from "../ArticleImage/ArticleImage";
 const ArticleListItem = (props) => {
     const { article } = props;
     const { 
@@ -9,8 +10,10 @@ const ArticleListItem = (props) => {
             title,
             timeStamp,
             displayDate,
-            shortText
+            shortText,
+            image
         } = article;
+    const url = image ? image._url : null;
     const [buttonText, setButtonText] = useState('Show more');
     const [showDetail, setShowDetail]  = useState(false);
     const handleButtonClick = () => {
@@ -27,6 +30,7 @@ const ArticleListItem = (props) => {
     <div className={style.ArticleItemWrapper}>
         <article>
             <header>
+                <ArticleImage url={url} title={title}></ArticleImage>
                 <h1>
                     <Link to={`/articlelist/${slug}`} className={style.Title}>
                         {title}
