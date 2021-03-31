@@ -2,6 +2,7 @@ import React from "react";
 import HTMLText from "../HTMLText/HTMLText.jsx";
 import styles from "./DynamicArticle.module.css";
 import { Link } from "react-router-dom";
+import ArticleImage from "../ArticleImage/ArticleImage";
 
 const DynamicArticle = (props) => {
   return (
@@ -11,6 +12,10 @@ const DynamicArticle = (props) => {
       </Link>
       <article className={styles.article}>
         <header>
+          <ArticleImage
+            url={props.article.image._url}
+            title={props.article.title}
+          />
           <h1>{props.article.title}</h1>
           <address>
             by {props.article.author} (
