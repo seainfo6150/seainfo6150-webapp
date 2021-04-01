@@ -1,15 +1,39 @@
 .ArticleItemWrapper {
     background-color: white;
     border-radius: 10px;
-    padding: 0px 0 10px 10px;
-    margin-top: 20px;
-    background: linear-gradient(to right, RGB(176,23,31,0.5) 0px, white 20%)
+    padding: 0px 10px 12px 10px;
+    background: linear-gradient(to right, RGB(176,23,31,0.5) 0px, white 20%);
+    height: 100%;
+    position: relative;
 }
 
 .Title {
     color: red;
+
 }
 
 .Date {
     font-weight: bold;
+}
+.Header {
+    font-size: 13px;
+    max-height: 30px;
+    width: 200px;
+}
+.ToggleButtonContainer {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    margin-left: -10px;
+    box-sizing:border-box;
+    padding: 0 20px 0 20px;
+}
+.BasicInfo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Detail {
+    max-height: 200px;
+    overflow: auto;
 }

@@ -6,7 +6,7 @@ const ArticleTextToggleButton = (props)=> {
         onClick
     } = props;
     return (
-        <div >
+        <div className={style.ToggleButtonWrapper}>
             <button className={style.ToggleButton} onClick={onClick}>{buttonText}</button>
         </div>
     )

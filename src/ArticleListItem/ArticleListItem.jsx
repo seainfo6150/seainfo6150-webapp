@@ -30,19 +30,23 @@ const ArticleListItem = (props) => {
     <div className={style.ArticleItemWrapper}>
         <article>
             <header>
-                <ArticleImage url={url} title={title}></ArticleImage>
-                <h1>
-                    <Link to={`/articlelist/${slug}`} className={style.Title}>
-                        {title}
-                    </Link>
-                </h1>
+                <div className={style.BasicInfo}>
+                    <ArticleImage url={url} title={title}></ArticleImage>
+                    <h1 className={style.Header}>
+                        <Link to={`/articlelist/${slug}`} className={style.Title}>
+                            {title}
+                        </Link>
+                    </h1>
+                </div>
                 {showDetail && 
-                <div>
+                <div className={style.Detail}>
                     <time className={style.Date} dateTime={timeStamp}>{displayDate}</time>
                      <p>{shortText}</p>
                 </div>}  
             </header>
-            <ArticleTextToggleButton onClick={handleButtonClick} buttonText={buttonText}></ArticleTextToggleButton>
+            <div className={style.ToggleButtonContainer}>
+                <ArticleTextToggleButton  onClick={handleButtonClick} buttonText={buttonText}></ArticleTextToggleButton>
+            </div>
         </article>
     </div>)
 }

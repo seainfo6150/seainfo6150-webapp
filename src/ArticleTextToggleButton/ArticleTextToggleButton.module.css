@@ -3,4 +3,9 @@
     color: white;
     background-color: red;;
     border-radius: 5px;
+    width: 100%;
+}
+.ToggleButtonWrapper {
+    width: 100%;
+
 }
