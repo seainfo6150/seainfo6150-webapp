@@ -1,6 +1,6 @@
 .articleListContainer {
     background-color: grey;
-    padding: 10px 0 0 10px;
+    padding: 10px 0 30px 10px;
 
 }
 .articleList {
@@ -16,4 +16,10 @@ ul {
 li {
     min-width: 150px;
     min-height: 160px;
+}
+@media (min-width: 1600px) {
+    .articleList {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

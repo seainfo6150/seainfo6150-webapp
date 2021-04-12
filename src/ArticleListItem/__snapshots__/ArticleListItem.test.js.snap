@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleListItem tests renders correctly 1`] = `
+<div>
+  <div
+    class="ArticleItemWrapper"
+  >
+    <article>
+      <header>
+        <div
+          class="BasicInfo"
+        >
+          <div
+            class="articleImageWrapper"
+          >
+            <img
+              alt=""
+              class="articleImage"
+            />
+          </div>
+          <h1
+            class="Header"
+          >
+            <a
+              class="Title"
+              href="/articlelist/undefined"
+            />
+          </h1>
+        </div>
+      </header>
+      <div
+        class="ToggleButtonContainer"
+      >
+        <div
+          class="ToggleButtonWrapper"
+        >
+          <button
+            class="ToggleButton"
+          >
+            Show more
+          </button>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+`;

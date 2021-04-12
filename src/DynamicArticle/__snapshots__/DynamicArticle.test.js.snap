@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DynamicArticle tests renders correctly 1`] = `
+<div>
+  <p>
+    Invalid slug
+  </p>
+</div>
+`;

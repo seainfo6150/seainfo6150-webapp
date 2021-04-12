@@ -28,7 +28,7 @@ const DynamicArticle = (props) => {
         <Link to="/articleList" className={style.backBtn}>BACK</Link>
       </div>
       <div className={style.articleWrapper}> 
-        <article >
+        <article>
           <ArticleImage url={url} title={title}></ArticleImage>
           <header>
             <h1>{ title }</h1>
@@ -41,7 +41,7 @@ const DynamicArticle = (props) => {
             </address>
             <time dateTime={ timeStamp }>{ displayDate }</time>
           </header>
-          <HTMLText text={ text } />
+          <HTMLText  text={ text } />
         </article>
       </div>
     </div>
