@@ -8,15 +8,28 @@ exports[`ArticleListItem tests renders correctly 1`] = `
     <article
       class="article"
     >
-      <div
-        class="wrapper"
+      <header
+        class="header"
       >
+        <img
+          alt="The Statue of Liberty's torch heads to new museum"
+          class="image"
+          src="https://cdn.cnn.com/cnnnext/dam/assets/181122102925-statue-of-liberty-crown-super-169.jpg"
+        />
         <h2
           class="title"
         >
-          The Statue of Liberty's torch heads to new museum
+          <a
+            class="link"
+            href="/articlelist/181122102925-statue-of-liberty-crown"
+          >
+            The Statue of Liberty's torch heads to new museum
+          </a>
         </h2>
-      </div>
+      </header>
+      <div
+        class="wrapper"
+      />
       <button
         class="button"
       >

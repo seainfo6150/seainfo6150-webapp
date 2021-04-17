@@ -11,22 +11,18 @@
   padding: 15px;
 }
 
-@media screen and (min-width: 525px) {
+@media (min-width: 600px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (min-width: 800px) {
+@media (min-width: 800px) {
   .container {
     grid-template-columns: repeat(3, 1fr);
-  }
-}
+  }}
 
-@media screen and (min-width: 1150px) {
+@media (min-width: 1200px) {
   .container {
     grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-
+  }}
